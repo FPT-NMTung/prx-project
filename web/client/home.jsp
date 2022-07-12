@@ -1,3 +1,10 @@
+<%-- 
+    Document   : home.jsp
+    Created on : Jul 13, 2022, 12:55:37 AM
+    Author     : kaiok
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,7 +67,7 @@
         <!-- Main box -->
         <div class="main-box">
             <div class="menu-box">
-                <div class="logo"><a href="index-7.html"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="logo"><a href="home.jsp"><img src="images/logo.png" alt="" title=""></a></div>
 
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">
@@ -68,7 +75,7 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation menu-left clearfix">
-                                <li class="current dropdown"><a href="index-7.html">Home</a>
+                                <li class="current dropdown"><a href="home.jsp">Home</a>
                                     
                                 </li>
                                 <li class="dropdown"><a href="about-us.html">Pages</a>
@@ -184,7 +191,7 @@
         
         <!-- Mobile Header -->
         <div class="mobile-header">
-            <div class="logo"><a href="index.html"><img src="images/logo-small.png" alt="" title=""></a></div>
+            <div class="logo"><a href="home.jsp"><img src="images/logo-small.png" alt="" title=""></a></div>
 
             <!--Nav Box-->
             <div class="nav-outer clearfix">
@@ -195,7 +202,7 @@
         <!-- Mobile Menu  -->
         <div class="mobile-menu">
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo-small.png" alt="" title=""></a></div> 
+                <div class="nav-logo"><a href="home.jsp"><img src="images/logo-small.png" alt="" title=""></a></div> 
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             </nav>
         </div><!-- End Mobile Menu -->
