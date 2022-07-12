@@ -5,12 +5,20 @@
  */
 package controller;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import model.Product;
+import model.Products;
 
 /**
  *
@@ -30,18 +38,31 @@ public class ProductDetailController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet productDetailController</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet productDetailController at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+        /* TODO output your page here. You may use following sample code. */
+        String id = request.getParameter("productId");
+        List<Product> listProduct = new ArrayList<>();
+        Product tempProduct = new Product();
+        try {
+
+            JAXBContext context = JAXBContext.newInstance(Products.class);
+            Unmarshaller marshaller = context.createUnmarshaller();
+            File file = new File("D:/FPT/8-SUM2022/PRX301/Project/web/client/products.xml");
+            Products products = (Products) marshaller.unmarshal(file);
+            listProduct = products.getProducts();
+
+            for (Product product : listProduct) {
+                if (product.getId() == Integer.parseInt(id)) {
+                    tempProduct = product;
+                    break;
+                }
+            }
+//                request.setAttribute("listProduct", listProduct);
+            request.setAttribute("product", tempProduct);
+            request.getRequestDispatcher("client/product-detail.jsp").forward(request, response);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
         }
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

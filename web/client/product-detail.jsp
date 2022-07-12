@@ -5,6 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,12 +13,12 @@
 <title>Bellaria - a Delicious Cakes and Bakery HTML Template | Shop Single</title>
 
 <!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<link href="client/css/bootstrap.css" rel="stylesheet">
+<link href="client/css/style.css" rel="stylesheet">
+<link href="client/css/responsive.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="client/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="client/images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,7 +64,7 @@
         <!-- Main box -->
         <div class="main-box">
             <div class="menu-box">
-                <div class="logo"><a href="home.jsp"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="logo"><a href="client/home.jsp"><img src="client/images/logo.png" alt="" title=""></a></div>
 
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">
@@ -71,7 +72,7 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation menu-left clearfix">
-                                <li class="current dropdown"><a href="home.jsp">Home</a>
+                                <li class="current dropdown"><a href="client/home.jsp">Home</a>
                                     
                                 </li>
                                 <li class="dropdown"><a href="about-us.html">Pages</a>
@@ -148,7 +149,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo">
-                    <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
+                    <a href="#" title="Sticky Logo"><img src="client/images/logo-small.png" alt="Sticky Logo"></a>
                 </div>
 
                 <!--Right Col-->
@@ -169,7 +170,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo">
-                    <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
+                    <a href="#" title="Sticky Logo"><img src="client/images/logo-small.png" alt="Sticky Logo"></a>
                 </div>
 
                 <!--Right Col-->
@@ -187,7 +188,7 @@
         
         <!-- Mobile Header -->
         <div class="mobile-header">
-            <div class="logo"><a href="home.jsp"><img src="images/logo-small.png" alt="" title=""></a></div>
+            <div class="logo"><a href="home.jsp"><img src="client/images/logo-small.png" alt="" title=""></a></div>
 
             <!--Nav Box-->
             <div class="nav-outer clearfix">
@@ -198,7 +199,7 @@
         <!-- Mobile Menu  -->
         <div class="mobile-menu">
             <nav class="menu-box">
-                <div class="nav-logo"><a href="home.jsp"><img src="images/logo-small.png" alt="" title=""></a></div> 
+                <div class="nav-logo"><a href="home.jsp"><img src="client/images/logo-small.png" alt="" title=""></a></div> 
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             </nav>
         </div><!-- End Mobile Menu -->
@@ -227,7 +228,7 @@
         <div class="auto-container">
             <h1>Birthday Cake</h1>
             <ul class="page-breadcrumb">
-                <li><a href="home.jsp">home</a></li>
+                <li><a href="client/home.jsp">home</a></li>
                 <!--<li><a href="shop.html">Products</a></li>-->
                 <li>Birthday Cake</li>
             </ul>
@@ -249,22 +250,22 @@
                             <div class="basic-details">
                                 <div class="row clearfix">
                                     <div class="image-column col-md-6 col-sm-12">
-                                        <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/products/product-sinlge.jpg" class="lightbox-image" title="Image Caption Here"><img src="http://html.cwsthemes.com/bellaria/images/resource/products/product-sinlge.jpg" alt=""><span class="icon fa fa-search"></span></a></figure>
+                                        <figure class="image"><a href="${product.image}" class="lightbox-image" title="Image Caption Here"><img src="${product.image}" alt=""><span class="icon fa fa-search"></span></a></figure>
                                     </div>
                                     <div class="info-column col-md-6 col-sm-12">
                                         <div class="details-header">
-                                            <h4>Birthday Cake</h4>                      
-                                            <div class="item-price">$84.00</div>
-                                            <div class="text">Short description.</div>
+                                            <h4>${product.name}</h4>                      
+                                            <div class="item-price">$${product.price}</div>
+                                            <div class="text">${product.shortDescription}</div>
                                         </div>
 
                                         <div class="other-options clearfix">
 <!--                                            <div class="item-quantity">Quantity <input class="qty" type="number" value="1" name="quantity"></div>-->
                                             <button type="button" class="theme-btn add-to-cart"><span class="btn-title">Add To Cart</span></button>
                                             <ul class="product-meta">
-                                                <li class="posted_in">Category: <p style="color: #ff91a4">Cake</p></li>
-                                                </br>
-                                                <li class="tagged_as">Tag: <p style="color: #ff91a4">Nuts</p></li>
+                                                <li class="posted_in">Category: <p style="color: #ff91a4">${product.category}</p></li>
+                                                
+                                                <li class="tagged_as">Tag: <p style="color: #ff91a4">${product.tag}</p></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -290,7 +291,7 @@
                                         <div class="tab active-tab" id="prod-details">
                                             <h2 class="title">Descripton</h2>
                                             <div class="content">
-                                                <p>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</p>
+                                                <p>${product.longDescription}</p>
                                             </div>
                                         </div>
                                         
@@ -649,16 +650,16 @@
     <span class="fa fa-angle-up"></span>
 </div>
 
-<script src="js/jquery.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/select2.min.js"></script>
-<script src="js/sticky_sidebar.min.js"></script>
-<script src="js/script.js"></script>
+<script src="client/js/jquery.js"></script> 
+<script src="client/js/popper.min.js"></script>
+<script src="client/js/bootstrap.min.js"></script>
+<script src="client/js/jquery-ui.min.js"></script>
+<script src="client/js/jquery.fancybox.js"></script>
+<script src="client/js/owl.js"></script>
+<script src="client/js/wow.js"></script>
+<script src="client/js/appear.js"></script>
+<script src="client/js/select2.min.js"></script>
+<script src="client/js/sticky_sidebar.min.js"></script>
+<script src="client/js/script.js"></script>
 </body>
 </html>
