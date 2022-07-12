@@ -1,0 +1,20 @@
+<products>
+    <product id="1">
+        <name>Product 1</name>
+        <price>20</price>
+        <shortDescription></shortDescription>
+        <longDescription></longDescription>
+        <image></image>
+        <category></category>
+        <tag></tag>
+    </product>
+    <product id="2">
+        <name>Product 1</name>
+        <price>20</price>
+        <shortDescription></shortDescription>
+        <longDescription></longDescription>
+        <image></image>
+        <category></category>
+        <tag></tag>
+    </product>
+</products>
