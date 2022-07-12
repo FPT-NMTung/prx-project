@@ -47,7 +47,7 @@ public class SearchServlet extends HttpServlet {
                 JAXBContext context = JAXBContext.newInstance(Products.class);
                 Unmarshaller marshaller = context.createUnmarshaller();
 //                Products products = (Products) marshaller.unmarshal(new File("web/client/products.xml"));
-                Products products = (Products) marshaller.unmarshal(new File("D:/FPT/8-SUM2022/PRX301/Project/web/client/products.xml"));
+                Products products = (Products) marshaller.unmarshal(new File("D:\\FPT\\Subject\\Project\\prx-project\\web\\client\\products.xml"));
                 listProduct = products.getProducts();
                 String txtSearch = request.getParameter("search-field");
                 List<Product> searchResult = new ArrayList<>();

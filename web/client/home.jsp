@@ -550,11 +550,11 @@
                                         <div class="shop-item col-lg-4 col-md-6 col-sm-12" id="1">
                                             <div class="inner-box">
                                                 <div class="image-box">
-                                                    <figure class="image"><a href="prx-project/product-detail?productId=${p.id}"><img src="${p.image}" alt=""></a></figure>
+                                                    <figure class="image"><a href="product-detail?productId=${p.id}"><img src="${p.image}" alt=""></a></figure>
                                                     <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                                 </div>
                                                 <div class="lower-content clearfix">
-                                                    <h4 class="name"><a href="prx-project/product-detail?productId=${p.id}"></a>${p.name}</h4>
+                                                    <h4 class="name"><a href="product-detail?productId=${p.id}"></a>${p.name}</h4>
                                                     <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
                                                     <div class="price">${p.price}</div>
                                                 </div>

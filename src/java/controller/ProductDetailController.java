@@ -46,7 +46,7 @@ public class ProductDetailController extends HttpServlet {
 
             JAXBContext context = JAXBContext.newInstance(Products.class);
             Unmarshaller marshaller = context.createUnmarshaller();
-            File file = new File("D:/FPT/8-SUM2022/PRX301/Project/web/client/products.xml");
+            File file = new File("D:\\FPT\\Subject\\Project\\prx-project\\web\\client\\products.xml");
             Products products = (Products) marshaller.unmarshal(file);
             listProduct = products.getProducts();
 

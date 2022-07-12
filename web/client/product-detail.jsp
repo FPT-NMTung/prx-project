@@ -64,7 +64,7 @@
                 <!-- Main box -->
                 <div class="main-box">
                     <div class="menu-box">
-                        <div class="logo"><a href="client/home.jsp"><img src="client/images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="home"><img src="client/images/logo.png" alt="" title=""></a></div>
 
                         <!--Nav Box-->
                         <div class="nav-outer clearfix">
@@ -72,7 +72,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                     <ul class="navigation menu-left clearfix">
-                                        <li class="current dropdown"><a href="client/home.jsp">Home</a>
+                                        <li class="current dropdown"><a href="home">Home</a>
 
                                         </li>
                                         <li class="dropdown"><a href="about-us.html">Pages</a>
@@ -188,7 +188,7 @@
 
                 <!-- Mobile Header -->
                 <div class="mobile-header">
-                    <div class="logo"><a href="home.jsp"><img src="client/images/logo-small.png" alt="" title=""></a></div>
+                    <div class="logo"><a href="home"><img src="client/images/logo-small.png" alt="" title=""></a></div>
 
                     <!--Nav Box-->
                     <div class="nav-outer clearfix">
@@ -199,18 +199,18 @@
                 <!-- Mobile Menu  -->
                 <div class="mobile-menu">
                     <nav class="menu-box">
-                        <div class="nav-logo"><a href="home.jsp"><img src="client/images/logo-small.png" alt="" title=""></a></div> 
+                        <div class="nav-logo"><a href="home"><img src="client/images/logo-small.png" alt="" title=""></a></div> 
                         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                     </nav>
                 </div><!-- End Mobile Menu -->
 
                 <!-- Header Search -->
-                <div class="search-popup">
+             <div class="search-popup">
                     <span class="search-back-drop"></span>
 
                     <div class="search-inner">
                         <button class="close-search"><span class="fa fa-times"></span></button>
-                        <form method="post" action="blog-showcase.html">
+                        <form method="get" action="/prx-project/search">
                             <div class="form-group">
                                 <input type="search" name="search-field" value="" placeholder="Search..." required="">
                                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -225,10 +225,10 @@
 
             <!--Page Title-->
             <section class="page-title" style="background-image:url(http://html.cwsthemes.com/bellaria/images/background/34.jpg)">
-                <div class="auto-container">
+                <div class="auto-container">    
                     <h1>Birthday Cake</h1>
                     <ul class="page-breadcrumb">
-                        <li><a href="client/home.jsp">home</a></li>
+                        <li><a href="home">home</a></li>
                         <!--<li><a href="shop.html">Products</a></li>-->
                         <li>Birthday Cake</li>
                     </ul>
@@ -334,28 +334,33 @@
                             <aside class="sidebar theiaStickySidebar">
                                 <div class="sticky-sidebar">
                                     <!-- Search Widget -->
-                                    <div class="sidebar-widget search-widget">
-                                        <form method="post" action="contact.html">
+                                   <div class="sidebar-widget search-widget">
+                                        <form method="get" action="/prx-project/search">
                                             <div class="form-group">
-                                                <input type="search" name="search-field" value="" placeholder="Search products…" required>
+                                                <input type="text" name="search-field" value="" placeholder="Search products…" required>
                                                 <button type="submit"><span class="icon fa fa-search"></span></button>
                                             </div>
                                         </form>
                                     </div>
 
-                                    <div class="sidebar-widget tags-widget">
+                                   <div class="sidebar-widget tags-widget">
                                         <h3 class="widget-title">Tags</h3>
                                         <ul class="tag-list clearfix">
-                                            <li><a href="#">Bars</a></li>
-                                            <li><a href="#">Caramels</a></li>
-                                            <li><a href="#">Chocolate</a></li>
-                                            <li><a href="#">Fruit</a></li>
-                                            <li><a href="#">Nuts</a></li>
-                                            <li><a href="#">Toffees</a></li>
-                                            <li><a href="#">Top Rated</a></li>
-                                            <li><a href="#">Truffles</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Yami" >Yami</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Premium" >Premium</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=French" >French</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Classic" >Classic</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Candy" >Candy</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Happy" >Happy</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Hearts" >Hearts</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Coffee" >Coffee</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Lemon" >Lemon</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Birthday" >Birthday</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Limo" >Limo</a></li>
+                                            <li><a href="/prx-project/tag?txtTag=Authentic">Authentic</a></li>
                                         </ul>
                                     </div>
+                                    
                                 </div>
                             </aside>
                         </div>
