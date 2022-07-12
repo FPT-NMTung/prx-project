@@ -15,9 +15,9 @@
             <ingredient></ingredient>
         </ingredients>
         <directions>
-            <direction></direction>
-            <direction></direction>
-            <direction></direction>
+            <direction step="1"></direction>
+            <direction step="2"></direction>
+            <direction step="3"></direction>
         </directions>
     </recipe>
     <recipe id="2">
@@ -36,9 +36,9 @@
             <ingredient></ingredient>
         </ingredients>
         <directions>
-            <direction></direction>
-            <direction></direction>
-            <direction></direction>
+            <direction step="1"></direction>
+            <direction step="2"></direction>
+            <direction step="3"></direction>
         </directions>
     </recipe>
 </recipes>
