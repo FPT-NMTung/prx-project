@@ -262,9 +262,9 @@
 <!--                                            <div class="item-quantity">Quantity <input class="qty" type="number" value="1" name="quantity"></div>-->
                                             <button type="button" class="theme-btn add-to-cart"><span class="btn-title">Add To Cart</span></button>
                                             <ul class="product-meta">
-                                                <li class="posted_in">Category: Cake</li>
+                                                <li class="posted_in">Category: <p style="color: #ff91a4">Cake</p></li>
                                                 </br>
-                                                <li class="tagged_as">Tag: Nuts</li>
+                                                <li class="tagged_as">Tag: <p style="color: #ff91a4">Nuts</p></li>
                                             </ul>
                                         </div>
                                     </div>
