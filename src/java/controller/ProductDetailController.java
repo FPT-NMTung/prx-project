@@ -50,13 +50,23 @@ public class ProductDetailController extends HttpServlet {
             Products products = (Products) marshaller.unmarshal(file);
             listProduct = products.getProducts();
 
+            //get product
             for (Product product : listProduct) {
                 if (product.getId() == Integer.parseInt(id)) {
                     tempProduct = product;
                     break;
                 }
             }
-//                request.setAttribute("listProduct", listProduct);
+
+            //get list related product
+            List<Product> listRelatedProduct = new ArrayList<>();
+            for (Product product : listProduct) {
+                if (product.getTag().equals(tempProduct.getTag()) || product.getCategory().equals(tempProduct.getCategory())) {
+                    listRelatedProduct.add(product);
+                }
+            }
+            
+            request.setAttribute("listRelatedProduct", listRelatedProduct);
             request.setAttribute("product", tempProduct);
             request.getRequestDispatcher("client/product-detail.jsp").forward(request, response);
         } catch (JAXBException e) {
