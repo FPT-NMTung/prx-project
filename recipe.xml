@@ -1,0 +1,44 @@
+<recipes>
+    <recipe id="1">
+        <name></name>
+        <image></image>
+        <description></description>
+        <author></author>
+        <category></category>
+        <difficulty></difficulty>
+        <prepTime></prepTime>
+        <cookTime></cookTime>
+        <totalTime></totalTime>
+        <ingredients>
+            <ingredient></ingredient>
+            <ingredient></ingredient>
+            <ingredient></ingredient>
+        </ingredients>
+        <directions>
+            <direction></direction>
+            <direction></direction>
+            <direction></direction>
+        </directions>
+    </recipe>
+    <recipe id="2">
+        <name></name>
+        <image></image>
+        <description></description>
+        <author></author>
+        <category></category>
+        <difficulty></difficulty>
+        <prepTime></prepTime>
+        <cookTime></cookTime>
+        <totalTime></totalTime>
+        <ingredients>
+            <ingredient></ingredient>
+            <ingredient></ingredient>
+            <ingredient></ingredient>
+        </ingredients>
+        <directions>
+            <direction></direction>
+            <direction></direction>
+            <direction></direction>
+        </directions>
+    </recipe>
+</recipes>
