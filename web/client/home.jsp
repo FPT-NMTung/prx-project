@@ -217,7 +217,7 @@
             
             <div class="search-inner">
                 <button class="close-search"><span class="fa fa-times"></span></button>
-                <form method="post" action="blog-showcase.html">
+                <form method="get" action="/prx-project/search">
                     <div class="form-group">
                         <input type="search" name="search-field" value="" placeholder="Search..." required="">
                         <button type="submit"><i class="fa fa-search"></i></button>
