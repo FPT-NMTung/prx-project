@@ -14,16 +14,16 @@
 <title>Bellaria - a Delicious Cakes and Bakery | Home Shop</title>
 
 <!-- Stylesheets -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
-<link href="plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="client/css/bootstrap.css" rel="stylesheet">
+<link href="client/plugins/revolution/css/settings.css" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="client/plugins/revolution/css/layers.css" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
 <link href="plugins/revolution/css/navigation.css" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
 
-<link href="css/style.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet">
+<link href="client/css/style.css" rel="stylesheet">
+<link href="client/css/responsive.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="client/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="client/images/favicon.png" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -71,7 +71,7 @@
         <!-- Main box -->
         <div class="main-box">
             <div class="menu-box">
-                <div class="logo"><a href="home.jsp"><img src="images/logo.png" alt="" title=""></a></div>
+                <div class="logo"><a href="home"><img src="client/images/logo.png" alt="" title=""></a></div>
 
                 <!--Nav Box-->
                 <div class="nav-outer clearfix">
@@ -79,7 +79,7 @@
                     <nav class="main-menu navbar-expand-md navbar-light">
                         <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation menu-left clearfix">
-                                <li class="current dropdown"><a href="home.jsp">Home</a>
+                                <li class="current dropdown"><a href="home">Home</a>
                                     
                                 </li>
                                 <li class="dropdown"><a href="about-us.html">Pages</a>
@@ -156,7 +156,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo">
-                    <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
+                    <a href="#" title="Sticky Logo"><img src="client/images/logo-small.png" alt="Sticky Logo"></a>
                 </div>
 
                 <!--Right Col-->
@@ -177,7 +177,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo">
-                    <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
+                    <a href="#" title="Sticky Logo"><img src="client/images/logo-small.png" alt="Sticky Logo"></a>
                 </div>
 
                 <!--Right Col-->
@@ -195,7 +195,7 @@
         
         <!-- Mobile Header -->
         <div class="mobile-header">
-            <div class="logo"><a href="home.jsp"><img src="images/logo-small.png" alt="" title=""></a></div>
+            <div class="logo"><a href="home"><img src="client/images/logo-small.png" alt="" title=""></a></div>
 
             <!--Nav Box-->
             <div class="nav-outer clearfix">
@@ -206,7 +206,7 @@
         <!-- Mobile Menu  -->
         <div class="mobile-menu">
             <nav class="menu-box">
-                <div class="nav-logo"><a href="home.jsp"><img src="images/logo-small.png" alt="" title=""></a></div> 
+                <div class="nav-logo"><a href="home"><img src="client/images/logo-small.png" alt="" title=""></a></div> 
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             </nav>
         </div><!-- End Mobile Menu -->
@@ -275,7 +275,7 @@
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6;"><img src="images/main-slider/devider_home_07_icon.png" alt="" data-ww="125px" data-hh="60px" width="125" height="60" data-no-retina> 
+                            style="z-index: 6;"><img src="client/images/main-slider/devider_home_07_icon.png" alt="" data-ww="125px" data-hh="60px" width="125" height="60" data-no-retina> 
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -374,7 +374,7 @@
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6;"><img src="images/main-slider/devider_home_07_icon.png" alt="" data-ww="125px" data-hh="60px" width="125" height="60" data-no-retina>
+                            style="z-index: 6;"><img src="client/images/main-slider/devider_home_07_icon.png" alt="" data-ww="125px" data-hh="60px" width="125" height="60" data-no-retina>
                         </div>
 
                         <!-- LAYER NR. 8 -->
@@ -473,7 +473,7 @@
                             data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
-                            style="z-index: 6;"><img src="images/main-slider/devider_home_07_icon.png" alt="" data-ww="125px" data-hh="60px" width="125" height="60" data-no-retina> 
+                            style="z-index: 6;"><img src="client/images/main-slider/devider_home_07_icon.png" alt="" data-ww="125px" data-hh="60px" width="125" height="60" data-no-retina> 
                         </div>
 
                         <!-- LAYER NR. 13 -->
@@ -552,25 +552,25 @@
                             
                             
                            <!--  Shop Item -->
-                           <x:forEach select="$productlist/products/product" var="product">
+                           <c:forEach items="${listProduct}" var="p">
                             <div class="shop-item col-lg-4 col-md-6 col-sm-12" id="1">
                                 
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <figure class="image"><a href="shop-single.html"><img src="<x:out select="$product/image"/>" alt=""></a></figure>
+                                        <figure class="image"><a href="prx-project/product-detail?productId=${p.id}"><img src="${p.image}" alt=""></a></figure>
                                         <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
                                     </div>
                                     <div class="lower-content clearfix">
-                                        <h4 class="name"><a href="shop-single.html"></a><x:out select="$product/name"/></h4>
+                                        <h4 class="name"><a href="prx-project/product-detail?productId=${p.id}"></a>${p.name}</h4>
                                         <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                                        <div class="price">$<x:out select="$product/price"/></div>
+                                        <div class="price">${p.price}</div>
                                     </div>
                                 </div>
                              
                                         
                             </div>
 
-                                 </x:forEach>
+                                 </c:forEach>
                         </div>
                       
                     </div>
@@ -582,9 +582,9 @@
                         <div class="sticky-sidebar">
                             <!-- Search Widget -->
                             <div class="sidebar-widget search-widget">
-                                <form method="post" action="contact.html">
+                                <form method="get" action="/prx-project/search">
                                     <div class="form-group">
-                                        <input type="search" name="search-field" value="" placeholder="Search products…" required>
+                                        <input type="text" name="search-field" value="" placeholder="Search products…" required>
                                         <button type="submit"><span class="icon fa fa-search"></span></button>
                                     </div>
                                 </form>
@@ -593,32 +593,27 @@
                             <!-- Cart Widget -->
                             <div class="sidebar-widget cart-widget">
                                 <div class="widget-content">
-                                    <h3 class="widget-title">Cart</h3>
+                                    <h3 class="widget-title">Best Selling</h3>
                                     
                                     <div class="shopping-cart">
                                         <ul class="shopping-cart-items">
                                             <li class="cart-item">
-                                                <img src="https://via.placeholder.com/300x300" alt="#" class="thumb" />
-                                                <span class="item-name">Birthday Cake</span>
-                                                <span class="item-quantity">1 x <span class="item-amount">$84.00</span></span>
+                                                <img src="http://html.cwsthemes.com/bellaria/images/resource/products/9.jpg" alt="#" class="thumb" />
+                                                <span class="item-name">Lemon Lollipop</span>
+                                                <span class="item-quantity"><span class="item-amount">$35.00</span></span>
                                                 <a href="shop-single.html" class="product-detail"></a>
                                                 <button class="remove-item"><span class="fa fa-times"></span></button>
                                             </li>
 
                                             <li class="cart-item">
-                                                <img src="https://via.placeholder.com/300x300" alt="#" class="thumb"  />
-                                                <span class="item-name">French Macaroon</span>
-                                                <span class="item-quantity">1 x <span class="item-amount">$13.00</span></span>
+                                                <img src="http://html.cwsthemes.com/bellaria/images/resource/products/11.jpg" alt="#" class="thumb"  />
+                                                <span class="item-name">Authentic Macaroons</span>
+                                                <span class="item-quantity"><span class="item-amount">$25.00</span></span>
                                                 <a href="shop-single.html" class="product-detail"></a>
                                                 <button class="remove-item"><span class="fa fa-times"></span></button>
                                             </li>
                                         </ul>
 
-                                        <div class="cart-footer">
-                                            <div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>
-                                            <a href="cart.html" class="theme-btn">View Cart</a>
-                                            <a href="checkout.html" class="theme-btn">Checkout</a>
-                                        </div>
                                     </div> <!--end shopping-cart -->
                                 </div>
                             </div>
@@ -629,9 +624,9 @@
                                 <h3 class="widget-title">Tags</h3>
                               
                                 <ul class="tag-list clearfix">
-                                     <x:forEach select="$productlist/products/product" var="product">
-                                    <li><a href="#"><x:out select="$product/tag"></x:out></a></li>
-                                    </x:forEach>
+                                    <c:forEach items="${listProduct}" var="p">
+                                    <li><a href="/prx-project/tag?txtTag=${p.tag}" ">${p.tag}</a></li>
+                                    </c:forEach>
                                 </ul>
                                
                             </div>
@@ -779,29 +774,29 @@
     <span class="fa fa-angle-up"></span>
 </div>
 
-<script src="js/jquery.js"></script> 
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui.min.js"></script> 
+<script src="client/js/jquery.js"></script> 
+<script src="client/js/popper.min.js"></script>
+<script src="client/js/bootstrap.min.js"></script>
+<script src="client/js/jquery-ui.min.js"></script> 
 <!--Revolution Slider-->
-<script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="js/main-slider-script.js"></script>
+<script src="client/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="client/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="client/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="client/js/main-slider-script.js"></script>
 <!--Revolution Slider-->
-<script src="js/jquery.fancybox.js"></script>
-<script src="js/owl.js"></script>
-<script src="js/wow.js"></script>
-<script src="js/appear.js"></script>
-<script src="js/sticky_sidebar.min.js"></script>
-<script src="js/script.js"></script>
+<script src="client/js/jquery.fancybox.js"></script>
+<script src="client/js/owl.js"></script>
+<script src="client/js/wow.js"></script>
+<script src="client/js/appear.js"></script>
+<script src="client/js/sticky_sidebar.min.js"></script>
+<script src="client/js/script.js"></script>
 </body>
 </html>

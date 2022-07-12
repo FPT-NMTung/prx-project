@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author kaiok
  */
-@XmlRootElement
+@XmlRootElement(name = "product")
 public class Product {
     private int id;
     private String name;
@@ -65,7 +65,7 @@ public class Product {
     public String getShortDescription() {
         return shortDescription;
     }
- @XmlElement(name= "ShortDescription")
+ @XmlElement(name= "shortDescription")
     public void setShortDescription(String shortDescription) {
         this.shortDescription = shortDescription;
     }
@@ -73,7 +73,7 @@ public class Product {
     public String getLongDescription() {
         return longDescription;
     }
- @XmlElement(name= "LongDescription")
+ @XmlElement(name= "longDescription")
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
     }
