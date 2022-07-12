@@ -13,12 +13,13 @@ import javax.xml.bind.annotation.XmlRootElement;
  *
  * @author kaiok
  */
-@XmlRootElement
+@XmlRootElement(name = "product")
 public class Product {
+
     private int id;
     private String name;
     private double price;
-    private String shortDescription ;
+    private String shortDescription;
     private String longDescription;
     private String image;
     private String category;
@@ -41,7 +42,8 @@ public class Product {
     public int getId() {
         return id;
     }
-@XmlAttribute(name= "id")
+
+    @XmlAttribute(name = "id")
     public void setId(int id) {
         this.id = id;
     }
@@ -49,7 +51,8 @@ public class Product {
     public String getName() {
         return name;
     }
- @XmlElement(name= "name")
+
+    @XmlElement(name = "name")
     public void setName(String name) {
         this.name = name;
     }
@@ -57,7 +60,8 @@ public class Product {
     public double getPrice() {
         return price;
     }
- @XmlElement(name= "price")
+
+    @XmlElement(name = "price")
     public void setPrice(double price) {
         this.price = price;
     }
@@ -65,7 +69,8 @@ public class Product {
     public String getShortDescription() {
         return shortDescription;
     }
- @XmlElement(name= "shortDescription")
+
+    @XmlElement(name = "shortDescription")
     public void setShortDescription(String shortDescription) {
         this.shortDescription = shortDescription;
     }
@@ -73,7 +78,8 @@ public class Product {
     public String getLongDescription() {
         return longDescription;
     }
- @XmlElement(name= "longDescription")
+
+    @XmlElement(name = "longDescription")
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
     }
@@ -81,7 +87,8 @@ public class Product {
     public String getImage() {
         return image;
     }
- @XmlElement(name= "image")
+
+    @XmlElement(name = "image")
     public void setImage(String image) {
         this.image = image;
     }
@@ -89,7 +96,8 @@ public class Product {
     public String getCategory() {
         return category;
     }
- @XmlElement(name= "category")
+
+    @XmlElement(name = "category")
     public void setCategory(String category) {
         this.category = category;
     }
@@ -97,11 +105,9 @@ public class Product {
     public String getTag() {
         return tag;
     }
- @XmlElement(name= "tag")
+
+    @XmlElement(name = "tag")
     public void setTag(String tag) {
         this.tag = tag;
     }
-    
-            
-    
 }
