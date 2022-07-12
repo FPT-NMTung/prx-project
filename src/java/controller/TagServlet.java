@@ -37,35 +37,29 @@ public class TagServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-         response.setContentType("text/html;charset=UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
         List<Product> listProduct = new ArrayList<>();
-       
+
 //        try (PrintWriter out = response.getWriter()) {
+        try {
 
-            try {
-
-                JAXBContext context = JAXBContext.newInstance(Products.class);
-                Unmarshaller marshaller = context.createUnmarshaller();
+            JAXBContext context = JAXBContext.newInstance(Products.class);
+            Unmarshaller marshaller = context.createUnmarshaller();
 //                Products products = (Products) marshaller.unmarshal(new File("web/client/products.xml"));
-                Products products = (Products) marshaller.unmarshal(new File("D:\\FPT\\Subject\\Project\\prx-project\\web\\client\\products.xml"));
-                listProduct = products.getProducts();
-
-                String textTag = request.getParameter("txtTag");
-                List<Product> tagResult = new ArrayList<>();
-                for (Product product : listProduct) {
-                    if (product.getTag().equalsIgnoreCase(textTag)) {
-                        tagResult.add(product);
-
-                    }
+            Products products = (Products) marshaller.unmarshal(new File("D:\\FPT\\Subject\\Project\\prx-project\\web\\client\\products.xml"));
+            listProduct = products.getProducts();
+            String textTag = request.getParameter("txtTag");
+            List<Product> tagResult = new ArrayList<>();
+            for (Product product : listProduct) {
+                if (product.getTag().equalsIgnoreCase(textTag)) {
+                    tagResult.add(product);
                 }
-                //
-               
-                request.setAttribute("listProduct", tagResult);
-                
-                request.getRequestDispatcher("client/home.jsp").forward(request, response);
-            } catch (JAXBException e) {
-                throw new RuntimeException(e);
-            };
+            }
+            request.setAttribute("listProduct", tagResult);
+            request.getRequestDispatcher("client/home.jsp").forward(request, response);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
+        };
 
 //        }
     }

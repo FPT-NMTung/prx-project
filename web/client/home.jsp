@@ -624,9 +624,19 @@
                                 <h3 class="widget-title">Tags</h3>
                               
                                 <ul class="tag-list clearfix">
-                                    <c:forEach items="${listProduct}" var="p">
-                                    <li><a href="/prx-project/tag?txtTag=${p.tag}" ">${p.tag}</a></li>
-                                    </c:forEach>
+                                   
+                                    <li><a href="/prx-project/tag?txtTag=Yami" >Yami</a></li>
+                                  <li><a href="/prx-project/tag?txtTag=Premium" >Premium</a></li>
+                                  <li><a href="/prx-project/tag?txtTag=French" >French</a></li>
+                                  <li><a href="/prx-project/tag?txtTag=Classic" >Classic</a></li>
+                                  <li><a href="/prx-project/tag?txtTag=Candy" >Candy</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Happy" >Happy</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Hearts" >Hearts</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Coffee" >Coffee</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Lemon" >Lemon</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Birthday" ">Birthday</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Limo" >Limo</a></li>
+                                <li><a href="/prx-project/tag?txtTag=Authentic">Authentic</a></li>
                                 </ul>
                                
                             </div>
@@ -660,9 +670,9 @@
                             </div>
 
                             <div class="text-box">
-                                <p>250 Biscayne Blvd. (North) 11st Floor <br>New World Tower Miami, Florida 33148</p>
-                                <p><a href="tel:305-333-5522">(305) 333-5522</a></p>
-                                <p><a href="mailto:info@your-site.com">info@your-site.com</a></p>
+                                <p>Đại Học FPT Hòa Lạc <br>Hello Word</p>
+                                <p><a href="tel:305-333-5522">(037) 566-1741</a></p>
+                                <p><a href="mailto:info@your-site.com">absite@fpt.edu.vn</a></p>
                             </div>
 
                             <div class="social-box">
@@ -689,17 +699,17 @@
 
                             <div class="instagram-gallery">
                                 <div class="outer-box clearfix">
-                                    <figure class="image"><a href="https://via.placeholder.com/150x150" class="lightbox-image" data-fancybox='instagram'><img src="https://via.placeholder.com/150x150" alt=""></a></figure>
+                                    <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/gw-7.jpg" class="lightbox-image" data-fancybox='instagram'><img src="http://html.cwsthemes.com/bellaria/images/resource/gw-7.jpg" alt=""></a></figure>
 
-                                    <figure class="image"><a href="https://via.placeholder.com/150x150" class="lightbox-image" data-fancybox='instagram'><img src="https://via.placeholder.com/150x150" alt=""></a></figure>
+                                    <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/gw-8.jpg" class="lightbox-image" data-fancybox='instagram'><img src="http://html.cwsthemes.com/bellaria/images/resource/gw-8.jpg" alt=""></a></figure>
 
-                                    <figure class="image"><a href="https://via.placeholder.com/150x150" class="lightbox-image" data-fancybox='instagram'><img src="https://via.placeholder.com/150x150" alt=""></a></figure>
+                                    <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/gw-9.jpg" class="lightbox-image" data-fancybox='instagram'><img src="http://html.cwsthemes.com/bellaria/images/resource/gw-9.jpg" alt=""></a></figure>
 
-                                    <figure class="image"><a href="https://via.placeholder.com/150x150" class="lightbox-image" data-fancybox='instagram'><img src="https://via.placeholder.com/150x150" alt=""></a></figure>
+                                    <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/gw-10.jpg" class="lightbox-image" data-fancybox='instagram'><img src="http://html.cwsthemes.com/bellaria/images/resource/gw-10.jpg" alt=""></a></figure>
 
-                                    <figure class="image"><a href="https://via.placeholder.com/150x150" class="lightbox-image" data-fancybox='instagram'><img src="https://via.placeholder.com/150x150" alt=""></a></figure>
+                                    <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/gw-11.jpg" class="lightbox-image" data-fancybox='instagram'><img src="http://html.cwsthemes.com/bellaria/images/resource/gw-11.jpg" alt=""></a></figure>
 
-                                    <figure class="image"><a href="https://via.placeholder.com/150x150" class="lightbox-image" data-fancybox='instagram'><img src="https://via.placeholder.com/150x150" alt=""></a></figure>
+                                    <figure class="image"><a href="http://html.cwsthemes.com/bellaria/images/resource/gw-12.jpg" class="lightbox-image" data-fancybox='instagram'><img src="http://html.cwsthemes.com/bellaria/images/resource/gw-12.jpg" alt=""></a></figure>
                                 </div>
                             </div>
                         </div>
@@ -748,7 +758,7 @@
         <div class="footer-bottom">
             <div class="auto-container">
                 <div class="copyright-text">
-                    <p>Bellaria - A Delicious Cakes and Bakery WordPress Theme</p>
+                    <p>Bellaria - A Delicious Cakes and Bakery ABboy</p>
                 </div>
             </div>
         </div>

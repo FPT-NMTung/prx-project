@@ -49,17 +49,7 @@ public class SearchServlet extends HttpServlet {
 //                Products products = (Products) marshaller.unmarshal(new File("web/client/products.xml"));
                 Products products = (Products) marshaller.unmarshal(new File("D:\\FPT\\Subject\\Project\\prx-project\\web\\client\\products.xml"));
                 listProduct = products.getProducts();
-
                 String txtSearch = request.getParameter("search-field");
-                String txtTag = request.getParameter("txtTag");
-                List<Product> tagResult = new ArrayList<>();
-                for (Product product : listProduct) {
-                    if (product.getName().contains(txtSearch)) {
-                        tagResult.add(product);
-
-                    }
-                }
-                //
                 List<Product> searchResult = new ArrayList<>();
                 for (Product product : listProduct) {
                     if (product.getName().contains(txtSearch)) {
@@ -67,7 +57,6 @@ public class SearchServlet extends HttpServlet {
 
                     }
                 }
-                request.setAttribute("listProduct", txtTag);
                 request.setAttribute("listProduct", searchResult);
                 request.getRequestDispatcher("client/home.jsp").forward(request, response);
             } catch (JAXBException e) {
