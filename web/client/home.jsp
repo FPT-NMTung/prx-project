@@ -113,9 +113,9 @@
                     <div class="outer-box clearfix">
                         <!-- Shoppping Car -->
                         <div class="cart-btn">
-                            <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">2</span></a>
-
-                            <div class="shopping-cart">
+<!--                            <a href="client/shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count"></span></a>-->
+<a href="client/shopping-cart.html"><i class="icon flaticon-commerce"></i></a>
+<!--                            <div class="shopping-cart">
                                 <ul class="shopping-cart-items">
                                     <li class="cart-item">
                                         <img src="https://via.placeholder.com/300x300" alt="#" class="thumb" />
@@ -139,7 +139,7 @@
                                     <a href="cart.html" class="theme-btn">View Cart</a>
                                     <a href="checkout.html" class="theme-btn">Checkout</a>
                                 </div>
-                            </div> <!--end shopping-cart -->
+                            </div> end shopping-cart -->
                         </div>
 
                         <!-- Search Btn -->
