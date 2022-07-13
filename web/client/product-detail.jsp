@@ -313,7 +313,7 @@
                                                         <div class="image-box">
                                                             <div class="sale-tag">sale!</div>
                                                             <figure class="image"><a href="product-detail?productId=${rp.id}"><img src="${rp.image}" alt=""></a></figure>
-                                                            <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
+                                                            <div class="btn-box"><a href="product-detail?productId=${rp.id}">View detail</a></div>
                                                         </div>
                                                         <div class="lower-content">
                                                             <h4 class="name"><a href="product-detail?productId=${rp.id}">${rp.name}</a></h4>

@@ -551,7 +551,7 @@
                                             <div class="inner-box">
                                                 <div class="image-box">
                                                     <figure class="image"><a href="product-detail?productId=${p.id}"><img src="${p.image}" alt=""></a></figure>
-                                                    <div class="btn-box"><a href="shopping-cart.html">Add to cart</a></div>
+                                                    <div class="btn-box"><a href="product-detail?productId=${p.id}">View detail</a></div>
                                                 </div>
                                                 <div class="lower-content clearfix">
                                                     <h4 class="name"><a href="product-detail?productId=${p.id}"></a>${p.name}</h4>
