@@ -7,6 +7,7 @@ package controller;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -16,14 +17,14 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import model.Product;
-import model.Products;
+import model.Recipe;
+import model.Recipes;
 
 /**
  *
- * @author MSI - GL
+ * @author ntduo
  */
-public class ProductDetailController extends HttpServlet {
+public class RecipeDetailController extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,41 +38,31 @@ public class ProductDetailController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        /* TODO output your page here. You may use following sample code. */
-        String id = request.getParameter("productId");
-        List<Product> listProduct = new ArrayList<>();
-        Product tempProduct = new Product();
+        List<Recipe> listRecipe = new ArrayList<>();
+        String id = request.getParameter("recipeId");
+        
         try {
-
-            JAXBContext context = JAXBContext.newInstance(Products.class);
+            JAXBContext context = JAXBContext.newInstance(Recipes.class);
             Unmarshaller marshaller = context.createUnmarshaller();
-            File file = new File(getServletContext().getRealPath("/client/products.xml"));
-            Products products = (Products) marshaller.unmarshal(file);
-            listProduct = products.getProducts();
-
-            //get product
-            for (Product product : listProduct) {
-                if (product.getId() == Integer.parseInt(id)) {
-                    tempProduct = product;
+            File file = new File(getServletContext().getRealPath("/client/recipe.xml"));
+            Recipes recipes = (Recipes) marshaller.unmarshal(file);
+            listRecipe = recipes.getRecipes();
+            
+            Recipe tempRecipe = new Recipe();
+            for (Recipe recipe : listRecipe) {
+                if (recipe.getId() == Integer.parseInt(id)) {
+                    tempRecipe = recipe;
                     break;
                 }
             }
-
-            //get list related product
-            List<Product> listRelatedProduct = new ArrayList<>();
-            for (Product product : listProduct) {
-                if (product.getTag().equals(tempProduct.getTag()) || product.getCategory().equals(tempProduct.getCategory())) {
-                    listRelatedProduct.add(product);
-                }
-            }
-            
-            request.setAttribute("listRelatedProduct", listRelatedProduct);
-            request.setAttribute("product", tempProduct);
-            request.getRequestDispatcher("client/product-detail.jsp").forward(request, response);
+            request.setAttribute("recipe", tempRecipe);
+            request.setAttribute("ingredients", tempRecipe.getIngredients());
+            request.getRequestDispatcher("client/recipes_detail.jsp").forward(request, response);
+         //   response.sendRedirect("client/recipes_detail.jsp");
         } catch (JAXBException e) {
             throw new RuntimeException(e);
         }
-
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
