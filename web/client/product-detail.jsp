@@ -104,31 +104,37 @@
                             <!-- Main Menu End-->
 
                             <div class="outer-box clearfix">
-                                <!-- Shoppping Car -->
                                 <div class="cart-btn">
-                                    <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">2</span></a>
+                                    <c:if test="${sessionScope.listCart != null}" >
+                                        <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">${sessionScope.listCart.size()}</span></a>
+                                        </c:if>
+
+                                    <c:if test="${sessionScope.listCart == null}" >
+                                        <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">0</span></a>
+                                    </c:if>
 
                                     <div class="shopping-cart">
-                                        <ul class="shopping-cart-items">
-                                            <li class="cart-item">
-                                                <img src="https://via.placeholder.com/300x300" alt="#" class="thumb" />
-                                                <span class="item-name">Birthday Cake</span>
-                                                <span class="item-quantity">1 x <span class="item-amount">$84.00</span></span>
-                                                <a href="shop-single.html" class="product-detail"></a>
-                                                <button class="remove-item"><span class="fa fa-times"></span></button>
-                                            </li>
+                                        <c:if test="${sessionScope.listCart.size() != null}" >
+                                            <ul class="shopping-cart-items">
+                                                <c:forEach var="cartItem" items="${sessionScope.listCart}">
+                                                    <li class="cart-item">
+                                                        <img src="${cartItem.productImage}" alt="#" class="thumb" />
+                                                        <span class="item-name">${cartItem.productName}</span>
+                                                        <span class="item-quantity">${cartItem.quantity} x <span class="item-amount">$${cartItem.productPrice}</span></span>
+                                                        <a href="product-detail?productId=${cartItem.productId}" class="product-detail"></a>
+                                                        <!--<button class="remove-item"><span class="fa fa-times"></span></button>-->
+                                                    </li>
+                                                </c:forEach>
 
-                                            <li class="cart-item">
-                                                <img src="https://via.placeholder.com/300x300" alt="#" class="thumb"  />
-                                                <span class="item-name">French Macaroon</span>
-                                                <span class="item-quantity">1 x <span class="item-amount">$13.00</span></span>
-                                                <a href="shop-single.html" class="product-detail"></a>
-                                                <button class="remove-item"><span class="fa fa-times"></span></button>
-                                            </li>
-                                        </ul>
+                                            </ul>
+                                        </c:if>
+                                        <c:if test="${sessionScope.listCart == null}" >
+                                            <span class="item-name">There are no product here!</span>
+                                        </c:if>
+
 
                                         <div class="cart-footer">
-                                            <div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>
+                                            <!--<div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>-->
                                             <a href="cart.html" class="theme-btn">View Cart</a>
                                             <a href="checkout.html" class="theme-btn">Checkout</a>
                                         </div>
@@ -226,11 +232,11 @@
             <!--Page Title-->
             <section class="page-title" style="background-image:url(http://html.cwsthemes.com/bellaria/images/background/34.jpg)">
                 <div class="auto-container">    
-                    <h1>Birthday Cake</h1>
+                    <h1>${product.name}</h1>
                     <ul class="page-breadcrumb">
                         <li><a href="home">home</a></li>
                         <!--<li><a href="shop.html">Products</a></li>-->
-                        <li>Birthday Cake</li>
+                        <li>${product.category}</li>
                     </ul>
                 </div>
             </section>
@@ -260,13 +266,15 @@
                                                 </div>
 
                                                 <div class="other-options clearfix">
-                                                    <!--                                            <div class="item-quantity">Quantity <input class="qty" type="number" value="1" name="quantity"></div>-->
-                                                    <button type="button" class="theme-btn add-to-cart"><span class="btn-title">Add To Cart</span></button>
+
+                                                    <!--<div class="item-quantity">Quantity <input  class="qty" type="number" value="1" max="10" name="quantity"></div>-->
+                                                    <a href="add-to-cart?productId=${product.id}" type="" class="theme-btn add-to-cart"><span class="btn-title">Add To Cart</span></a>
                                                     <ul class="product-meta">
                                                         <li class="posted_in">Category: ${product.category}</li>
 
                                                         <li class="tagged_as">Tag: ${product.tag}</li>
                                                     </ul>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -370,7 +378,7 @@
                                             </div> <!--end shopping-cart -->
                                         </div>
                                     </div>
-                                     
+
                                     <!-- Tags Widget -->
                                     <div class="sidebar-widget tags-widget">
                                         <h3 class="widget-title">Tags</h3>
