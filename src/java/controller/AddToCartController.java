@@ -7,7 +7,6 @@ package controller;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -48,7 +47,7 @@ public class AddToCartController extends HttpServlet {
         try {
             JAXBContext context = JAXBContext.newInstance(Products.class);
             Unmarshaller marshaller = context.createUnmarshaller();
-            Products products = (Products) marshaller.unmarshal(new File("D:/FPT/8-SUM2022/PRX301/Project/web/client/products.xml"));
+            Products products = (Products) marshaller.unmarshal(new File(getServletContext().getRealPath("/client/products.xml")));
             listProduct = products.getProducts();
 
             //get product
