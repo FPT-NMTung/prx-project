@@ -12,6 +12,14 @@
         <servlet-name>AdminProductListController</servlet-name>
         <servlet-class>controller.AdminProductListController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AdminProductDetailController</servlet-name>
+        <servlet-class>controller.AdminProductDetailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminProductDeleteController</servlet-name>
+        <servlet-class>controller.AdminProductDeleteController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProductDetailController</servlet-name>
         <url-pattern>/product-detail</url-pattern>
@@ -47,6 +55,14 @@
     <servlet-mapping>
         <servlet-name>AdminProductListController</servlet-name>
         <url-pattern>/admin/products</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductDetailController</servlet-name>
+        <url-pattern>/admin/product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductDeleteController</servlet-name>
+        <url-pattern>/admin/product/delete</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
