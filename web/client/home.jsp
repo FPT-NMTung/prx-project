@@ -217,7 +217,7 @@
 
                     <div class="search-inner">
                         <button class="close-search"><span class="fa fa-times"></span></button>
-                        <form method="post" action="blog-showcase.html">
+                        <form method="get" action="search">
                             <div class="form-group">
                                 <input type="search" name="search-field" value="" placeholder="Search..." required="">
                                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -556,7 +556,7 @@
                                                 <div class="lower-content clearfix">
                                                     <h4 class="name"><a href="product-detail?productId=${p.id}"></a>${p.name}</h4>
                                                     <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></div>
-                                                    <div class="price">${p.price}</div>
+                                                    <div class="price">$${p.price}</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,7 +570,7 @@
                                 <div class="sticky-sidebar">
                                     <!-- Search Widget -->
                                     <div class="sidebar-widget search-widget">
-                                        <form method="get" action="/prx-project/search">
+                                        <form method="get" action="search">
                                             <div class="form-group">
                                                 <input type="text" name="search-field" value="" placeholder="Search products…" required>
                                                 <button type="submit"><span class="icon fa fa-search"></span></button>
@@ -589,7 +589,7 @@
                                                         <img src="http://html.cwsthemes.com/bellaria/images/resource/products/9.jpg" alt="#" class="thumb" />
                                                         <span class="item-name">Lemon Lollipop</span>
                                                         <span class="item-quantity"><span class="item-amount">$35.00</span></span>
-                                                        <a href="shop-single.html" class="product-detail"></a>
+                                                        <a href="product-detail?productId=9" class="product-detail"></a>
                                                         <button class="remove-item"><span class="fa fa-times"></span></button>
                                                     </li>
 
@@ -597,7 +597,7 @@
                                                         <img src="http://html.cwsthemes.com/bellaria/images/resource/products/11.jpg" alt="#" class="thumb"  />
                                                         <span class="item-name">Authentic Macaroons</span>
                                                         <span class="item-quantity"><span class="item-amount">$25.00</span></span>
-                                                        <a href="shop-single.html" class="product-detail"></a>
+                                                        <a href="product-detail?productId=12" class="product-detail"></a>
                                                         <button class="remove-item"><span class="fa fa-times"></span></button>
                                                     </li>
                                                 </ul>
@@ -610,18 +610,18 @@
                                     <div class="sidebar-widget tags-widget">
                                         <h3 class="widget-title">Tags</h3>
                                         <ul class="tag-list clearfix">
-                                            <li><a href="/prx-project/tag?txtTag=Yami" >Yami</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Premium" >Premium</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=French" >French</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Classic" >Classic</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Candy" >Candy</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Happy" >Happy</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Hearts" >Hearts</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Coffee" >Coffee</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Lemon" >Lemon</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Birthday" >Birthday</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Limo" >Limo</a></li>
-                                            <li><a href="/prx-project/tag?txtTag=Authentic">Authentic</a></li>
+                                            <li><a href="tag?txtTag=Yami" >Yami</a></li>
+                                            <li><a href="tag?txtTag=Premium" >Premium</a></li>
+                                            <li><a href="tag?txtTag=French" >French</a></li>
+                                            <li><a href="tag?txtTag=Classic" >Classic</a></li>
+                                            <li><a href="tag?txtTag=Candy" >Candy</a></li>
+                                            <li><a href="tag?txtTag=Happy" >Happy</a></li>
+                                            <li><a href="tag?txtTag=Hearts" >Hearts</a></li>
+                                            <li><a href="tag?txtTag=Coffee" >Coffee</a></li>
+                                            <li><a href="tag?txtTag=Lemon" >Lemon</a></li>
+                                            <li><a href="tag?txtTag=Birthday" >Birthday</a></li>
+                                            <li><a href="tag?txtTag=Limo" >Limo</a></li>
+                                            <li><a href="tag?txtTag=Authentic">Authentic</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -635,7 +635,7 @@
             <!-- Main Footer -->
             <footer class="main-footer style-seven">
                 <div class="shape_wrapper wave_up">
-                    <div class="shape_inner" style="background-image: url(https://via.placeholder.com/1920x600);"><div class="overlay"></div></div>
+                    <div class="shape_inner" style="background-image: url(http://html.cwsthemes.com/bellaria/images/background/5.jpg);"><div class="overlay"></div></div>
                 </div>
 
                 <!--Widgets Section-->

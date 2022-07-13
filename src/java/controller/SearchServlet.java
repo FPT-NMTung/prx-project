@@ -7,11 +7,9 @@ package controller;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,29 +38,23 @@ public class SearchServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         List<Product> listProduct = new ArrayList<>();
-        try (PrintWriter out = response.getWriter()) {
-
-            try {
-
-                JAXBContext context = JAXBContext.newInstance(Products.class);
-                Unmarshaller marshaller = context.createUnmarshaller();
+        try {
+            JAXBContext context = JAXBContext.newInstance(Products.class);
+            Unmarshaller marshaller = context.createUnmarshaller();
 //                Products products = (Products) marshaller.unmarshal(new File("web/client/products.xml"));
-                Products products = (Products) marshaller.unmarshal(new File("D:\\FPT\\Subject\\Project\\prx-project\\web\\client\\products.xml"));
-                listProduct = products.getProducts();
-                String txtSearch = request.getParameter("search-field");
-                List<Product> searchResult = new ArrayList<>();
-                for (Product product : listProduct) {
-                    if (product.getName().contains(txtSearch)) {
-                        searchResult.add(product);
-
-                    }
+            Products products = (Products) marshaller.unmarshal(new File("D:/FPT/8-SUM2022/PRX301/Project/web/client/products.xml"));
+            listProduct = products.getProducts();
+            String txtSearch = request.getParameter("search-field");
+            List<Product> searchResult = new ArrayList<>();
+            for (Product product : listProduct) {
+                if (product.getName().toLowerCase().contains(txtSearch.toLowerCase())) {
+                    searchResult.add(product);
                 }
-                request.setAttribute("listProduct", searchResult);
-                request.getRequestDispatcher("client/home.jsp").forward(request, response);
-            } catch (JAXBException e) {
-                throw new RuntimeException(e);
             }
-
+            request.setAttribute("listProduct", searchResult);
+            request.getRequestDispatcher("client/home.jsp").forward(request, response);
+        } catch (JAXBException e) {
+            throw new RuntimeException(e);
         }
     }
 
