@@ -8,6 +8,10 @@
         <servlet-name>AddToCartController</servlet-name>
         <servlet-class>controller.AddToCartController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AdminProductListController</servlet-name>
+        <servlet-class>controller.AdminProductListController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProductDetailController</servlet-name>
         <url-pattern>/product-detail</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>AddToCartController</servlet-name>
         <url-pattern>/add-to-cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductListController</servlet-name>
+        <url-pattern>/admin/products</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
