@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+    <product id="1">
+        <name>Yami Makaroons</name>
+        <price>17.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/1.jpg</image>
+        <category>Macaroon</category>
+        <tag>Yami</tag>
+    </product>
+    <product id="2">
+        <name>Premium Lollipop</name>
+        <price>9.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/2.jpg</image>
+        <category>Lollipop</category>
+        <tag>Premium</tag>
+    </product>
+    <product id="3">
+        <name>French Macaroon</name>
+        <price>17.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/3.jpg</image>
+        <category>Macaroon</category>
+        <tag>French</tag>
+    </product>
+    <product id="4">
+        <name>Classic Macaroon</name>
+        <price>22.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/4.jpg</image>
+        <category>Macaroon</category>
+        <tag>Classic</tag>
+    </product>
+    <product id="5">
+        <name>Candy Lollipop</name>
+        <price>15.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/5.jpg</image>
+        <category>Macaroon</category>
+        <tag>Candy</tag>
+    </product>
+    <product id="6">
+        <name>Happy Ninja</name>
+        <price>35.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/6.jpg</image>
+        <category>Ninja</category>
+        <tag>Happy</tag>
+    </product>
+    <product id="7">
+        <name>Hearts Lollipop</name>
+        <price>17.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/7.jpg</image>
+        <category>Lollipop</category>
+        <tag>Hearts</tag>
+    </product>
+    <product id="8">
+        <name>Coffee Cake</name>
+        <price>39.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/8.jpg</image>
+        <category>Cake</category>
+        <tag>Coffee</tag>
+    </product>
+    <product id="9">
+        <name>Lemon Lollipop</name>
+        <price>35.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/9.jpg</image>
+        <category>Lollipop</category>
+        <tag>Lemon</tag>
+    </product>
+    <product id="10">
+        <name>Birthday Cake</name>
+        <price>84.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/10.jpg</image>
+        <category>Cake</category>
+        <tag>Birthday</tag>
+    </product>
+    <product id="11">
+        <name>Limo Lollipop</name>
+        <price>32.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/11.jpg</image>
+        <category>Lollipop</category>
+        <tag>Limo</tag>
+    </product>
+    <product id="12">
+        <name>Authentic Macaroons</name>
+        <price>25.00</price>
+        <shortDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class.</shortDescription>
+        <longDescription>Accumsan lectus, consectetuer et sagittis et commodo, massa et, sed facilisi mi, sit diam. Ultrices facilisi convallis nullam duis. Aliquam lacinia orci convallis erat ac, vitae neque in class. Suscipit vel, rhoncus est quis nibh netus, aenean eleifend et viverra, neque accumsan maecenas nec in. Morbi bibendum non ullamcorper aliquam natoque, tortor dui, vestibulum vulputate pulvinar iaculis magna lectus ut, facilisis id mollis risus lorem. Massa nulla cum nunc litora ac amet, accumsan faucibus integer, vestibulum turpis cras, ante imperdiet tincidunt accumsan, vivamus lacinia bibendum augue maiores mauris.</longDescription>
+        <image>http://html.cwsthemes.com/bellaria/images/resource/products/12.jpg</image>
+        <category>Macaroons</category>
+        <tag>Authentic</tag>
+    </product>
+</products>
