@@ -227,7 +227,7 @@
     <!--End Main Header -->
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(http://html.cwsthemes.com/bellaria/images/background/34.jpg">
+    <section class="page-title" style="background-image: url(http://html.cwsthemes.com/bellaria/images/background/34.jpg">
         <div class="auto-container">
             <h1>Our Staff</h1>
             <ul class="page-breadcrumb">
