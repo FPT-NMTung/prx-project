@@ -20,6 +20,10 @@
         <servlet-name>AdminProductDeleteController</servlet-name>
         <servlet-class>controller.AdminProductDeleteController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AdminProductCreateController</servlet-name>
+        <servlet-class>controller.AdminProductCreateController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProductDetailController</servlet-name>
         <url-pattern>/product-detail</url-pattern>
@@ -63,6 +67,10 @@
     <servlet-mapping>
         <servlet-name>AdminProductDeleteController</servlet-name>
         <url-pattern>/admin/product/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductCreateController</servlet-name>
+        <url-pattern>/admin/create</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

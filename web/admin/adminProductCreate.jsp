@@ -121,7 +121,7 @@
                     <div class="col-2"></div>
                     <div class="col-7">
                         <div class="card" style="padding: 40px">
-                            <form action="product?id=${product.id}" method="POST">
+                            <form action="create" method="POST">
                                 <p style="margin: 0">Name: </p><input type="text" name="name" class="form-control" required/>                
                                 <p style="margin: 10px 0 0">Price: </p><input type="number" name="price" class="form-control" required/>
                                 <p style="margin: 10px 0 0">Short Description: </p><textarea rows="3" type="text" name="short" class="form-control" required></textarea>
