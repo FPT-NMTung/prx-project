@@ -191,7 +191,7 @@
 
                 <!-- Mobile Header -->
                 <div class="mobile-header">
-                    <div class="logo"><a href="home"><img src="images/logo-small.png" alt="" title=""></a></div>
+                    <div class="logo"><a href="../home"><img src="images/logo-small.png" alt="" title=""></a></div>
 
                     <!--Nav Box-->
                     <div class="nav-outer clearfix">
@@ -202,7 +202,7 @@
                 <!-- Mobile Menu  -->
                 <div class="mobile-menu">
                     <nav class="menu-box">
-                        <div class="nav-logo"><a href="home"><img src="images/logo-small.png" alt="" title=""></a></div> 
+                        <div class="nav-logo"><a href="../home"><img src="images/logo-small.png" alt="" title=""></a></div> 
                         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                     </nav>
                 </div><!-- End Mobile Menu -->
@@ -213,7 +213,7 @@
 
                     <div class="search-inner">
                         <button class="close-search"><span class="fa fa-times"></span></button>
-                        <form method="get" action="search">
+                        <form method="get" action="../search">
                             <div class="form-group">
                                 <input type="search" name="search-field" value="" placeholder="Search..." required="">
                                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -231,8 +231,8 @@
         <div class="auto-container">
             <h1>Our Staff</h1>
             <ul class="page-breadcrumb">
-                <li><a href="index.html">home</a></li>
-                <li>Our Staff</li>
+                <li><a href="../home">home</a></li>
+                <li><a href="our-staff.jsp">our staff</a></li>
             </ul>
         </div>
     </section>
