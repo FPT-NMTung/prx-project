@@ -65,7 +65,7 @@
                 <!-- Main box -->
                 <div class="main-box">
                     <div class="menu-box">
-                        <div class="logo"><a href="home"><img src="images/logo.png" alt="" title=""></a></div>
+                        <div class="logo"><a href="../home"><img src="images/logo.png" alt="" title=""></a></div>
 
                         <!--Nav Box-->
                         <div class="nav-outer clearfix">
@@ -79,9 +79,7 @@
                                         <li class="current dropdown"><a href="client/our-staff.jsp">Pages</a>
                                             <ul>
                                                 <li><a href="client/our-staff.jsp">Our Staff</a></li>
-                                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                                <li><a href="content-elements.html">Content Elements</a></li>
-                                                <li><a href="recipes-list.html">Recipes Grid</a></li>
+                                                <li><a href="client/recipes-list.jsp">Recipes Grid</a></li>
                                             </ul>
                                         </li>
 
@@ -89,15 +87,13 @@
 
                                     <ul class="navigation menu-right clearfix">
 
-                                        <li class="dropdown"><a href="shop.html">Shop</a>
+                                        <li class="dropdown"><a href="../home">Shop</a>
                                             <ul>
-                                                <li><a href="shop.html">Shop</a></li>
                                                 <li><a href="shopping-cart.html">Cart</a></li>
                                                 <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="login.html">My account</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contacts</a></li>
+                                        <li><a href="client/contact.jsp">Contacts</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -441,7 +437,7 @@
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="shape_wrapper shape_one">
-            <div class="shape_inner" style="background-image: url(https://via.placeholder.com/1920x1080);"><div class="overlay"></div></div>
+            <div class="shape_inner" style="background-image: url(http://html.cwsthemes.com/bellaria/images/background/35.jpg"><div class="overlay"></div></div>
         </div>
 
         <!--Widgets Section-->

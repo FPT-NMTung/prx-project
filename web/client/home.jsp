@@ -85,7 +85,6 @@
                                         <li class="dropdown"><a href="client/our-staff.jsp">Pages</a>
                                             <ul>
                                                 <li><a href="client/our-staff.jsp">Our Staff</a></li>
-                                                <li><a href="client/content-elements.jsp">Content Elements</a></li>
                                                 <li><a href="client/recipes-list.jsp">Recipes Grid</a></li>
                                             </ul>
                                         </li>
