@@ -76,10 +76,10 @@
                                         <li class="dropdown"><a href="../home">Home</a>
 
                                         </li>
-                                        <li class="current dropdown"><a href="client/our-staff.jsp">Pages</a>
+                                        <li class="current dropdown"><a href="our-staff.jsp">Pages</a>
                                             <ul>
-                                                <li><a href="client/our-staff.jsp">Our Staff</a></li>
-                                                <li><a href="client/recipes-list.jsp">Recipes Grid</a></li>
+                                                <li><a href="our-staff.jsp">Our Staff</a></li>
+                                                <li><a href="recipes-list.jsp">Recipes Grid</a></li>
                                             </ul>
                                         </li>
 
@@ -93,7 +93,7 @@
                                                 <li><a href="checkout.html">Checkout</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="client/contact.jsp">Contacts</a></li>
+                                        <li><a href="contact.jsp">Contacts</a></li>
                                     </ul>
                                 </div>
                             </nav>
