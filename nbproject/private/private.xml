@@ -13,6 +13,18 @@
             <file>file:/D:/Sum2022/LearningClass/PRX301/Project/src/java/model/Product.java</file>
             <file>file:/D:/Sum2022/LearningClass/PRX301/Project/src/java/controller/AdminProductListController.java</file>
             <file>file:/D:/Sum2022/LearningClass/PRX301/Project/src/java/controller/SearchServlet.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/model/Cart.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/client/home.jsp</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/recipe.xml</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/controller/SearchServlet.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/client/login.html</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/controller/TagServlet.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/model/Product.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/index.html</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/controller/ProductDetailController.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/client/product-detail.jsp</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/controller/HomeServlet.java</file>
+            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/controller/AddToCartController.java</file>
         </group>
     </open-files>
 </project-private>
