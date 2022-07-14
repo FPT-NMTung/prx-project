@@ -5,6 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,217 +58,181 @@
     </div>
     
     <!-- Main Header-->
-    <header class="main-header">
-        <!-- Menu Wave -->
-        <div class="menu_wave"></div>
+            <header class="main-header">
+                <!-- Menu Wave -->
+                <div class="menu_wave"></div>
 
-        <!-- Main box -->
-        <div class="main-box">
-            <div class="menu-box">
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                <!-- Main box -->
+                <div class="main-box">
+                    <div class="menu-box">
+                        <div class="logo"><a href="../home"><img src="images/logo.png" alt="" title=""></a></div>
 
-                <!--Nav Box-->
-                <div class="nav-outer clearfix">
-                    <!-- Main Menu -->
-                    <nav class="main-menu navbar-expand-md navbar-light">
-                        <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-                            <ul class="navigation menu-left clearfix">
-                                <li class="dropdown"><a href="index.html">Home</a>
-                                    <ul>
-                                        <li><a href="index.html">Cakes</a></li>
-                                        <li><a href="index-2.html">Lollipop</a></li>
-                                        <li><a href="index-3.html">Wedding</a></li>
-                                        <li><a href="index-4.html">Coffee</a></li>
-                                        <li><a href="index-5.html">Ice-Cream</a></li>
-                                        <li><a href="index-6.html">Macaron</a></li>
-                                        <li><a href="index-7.html">Shop</a></li>
-                                        <li><a href="index-8.html">Landing</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="about-us.html">Pages</a>
-                                    <ul>
-                                        <li><a href="about-us.html">About Us</a></li>
-                                        <li><a href="our-staff.html">Our Staff</a></li>
-                                        <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                        <li><a href="content-elements.html">Content Elements</a></li>
-                                        <li><a href="recipes-list.html">Recipes Grid</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="portfolio-masonry.html">Portfolio</a>
-                                    <ul>
-                                        <li><a href="portfolio-masonry.html">Masonry</a></li>
-                                        <li><a href="portfolio-masonry-wide.html">Masonry Wide</a></li>
-                                        <li><a href="portfolio-wide.html">Wide</a></li>
-                                        <li><a href="portfolio-with-filter.html">With Filter</a></li>
-                                        <li><a href="portfolio-two-column.html">Two Columns</a></li>
-                                        <li><a href="portfolio-with-sidebar.html">With Sidebar</a></li>
-                                        <li><a href="portfolio-square.html">Square</a></li>
-                                        <li><a href="portfolio-single.html">single Post</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
+                        <!--Nav Box-->
+                        <div class="nav-outer clearfix">
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md navbar-light">
+                                <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation menu-left clearfix">
+                                        <li class="dropdown"><a href="../home">Home</a>
 
-                            <ul class="navigation menu-right clearfix">
-                                <li class="dropdown"><a href="blog-showcase.html">Blog</a>
-                                    <ul>
-                                        <li><a href="blog-showcase.html">Checkerboard</a></li>
-                                        <li><a href="blog-standard.html">Standard</a></li>
-                                        <li><a href="blog-masonry.html">Masonry</a></li>
-                                        <li><a href="blog-masonry-full-width.html">Masonry Full Width</a></li>
-                                        <li><a href="blog-two-column.html">Two Columns Grid</a></li>
-                                        <li><a href="blog-three-column-wide.html">Three Columns Wide</a></li>
-                                        <li class="dropdown"><a href="#">Post Types</a>
+                                        </li>
+                                        <li class="dropdown"><a href="our-staff.jsp">Pages</a>
                                             <ul>
-                                                <li><a href="blog-single.html">Standard Post</a></li>
-                                                <li><a href="blog-single-2.html">Gallery Post</a></li>
-                                                <li><a href="blog-single-3.html">Video Post</a></li>
-                                                <li><a href="blog-single-4.html">Audio Post</a></li>
-                                                <li><a href="blog-single-5.html">Quote Post</a></li>
-                                                <li><a href="blog-single-6.html">Link Post</a></li>
+                                                <li><a href="our-staff.jsp">Our Staff</a></li>
+                                                <li><a href="recipes-list.jsp">Recipes Grid</a></li>
                                             </ul>
                                         </li>
+
                                     </ul>
-                                </li>
-                                <li class="dropdown"><a href="shop.html">Shop</a>
-                                    <ul>
-                                        <li><a href="shop.html">Shop</a></li>
-                                        <li><a href="shopping-cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="login.html">My account</a></li>
+
+                                    <ul class="navigation menu-right clearfix">
+
+                                        <li class="dropdown"><a href="../home">Shop</a>
+                                            <ul>
+                                                <li><a href="shopping-cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="current dropdown"><a href="contact.jsp">Contacts</a></li>
                                     </ul>
-                                </li>
-                                <li class="current"><a href="contact.html">Contacts</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- Main Menu End-->
-
-                    <div class="outer-box clearfix">
-                        <!-- Shoppping Car -->
-                        <div class="cart-btn">
-                            <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">2</span></a>
-
-                            <div class="shopping-cart">
-                                <ul class="shopping-cart-items">
-                                    <li class="cart-item">
-                                        <img src="https://via.placeholder.com/300x300" alt="#" class="thumb" />
-                                        <span class="item-name">Birthday Cake</span>
-                                        <span class="item-quantity">1 x <span class="item-amount">$84.00</span></span>
-                                        <a href="shop-single.html" class="product-detail"></a>
-                                        <button class="remove-item"><span class="fa fa-times"></span></button>
-                                    </li>
-
-                                    <li class="cart-item">
-                                        <img src="https://via.placeholder.com/300x300" alt="#" class="thumb"  />
-                                        <span class="item-name">French Macaroon</span>
-                                        <span class="item-quantity">1 x <span class="item-amount">$13.00</span></span>
-                                        <a href="shop-single.html" class="product-detail"></a>
-                                        <button class="remove-item"><span class="fa fa-times"></span></button>
-                                    </li>
-                                </ul>
-
-                                <div class="cart-footer">
-                                    <div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>
-                                    <a href="cart.html" class="theme-btn">View Cart</a>
-                                    <a href="checkout.html" class="theme-btn">Checkout</a>
                                 </div>
-                            </div> <!--end shopping-cart -->
-                        </div>
+                            </nav>
+                            <!-- Main Menu End-->
 
-                        <!-- Search Btn -->
-                        <div class="search-box">
-                            <button class="search-btn"><i class="fa fa-search"></i></button>
+                            <div class="outer-box clearfix">
+                                <!-- Shoppping Car -->
+                                <div class="cart-btn">
+                                    <c:if test="${sessionScope.listCart != null}" >
+                                        <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">${sessionScope.listCart.size()}</span></a>
+                                        </c:if>
+
+                                    <c:if test="${sessionScope.listCart == null}" >
+                                        <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">0</span></a>
+                                        </c:if>
+
+                                    <div class="shopping-cart">
+                                        <c:if test="${sessionScope.listCart.size() != null}" >
+                                            <ul class="shopping-cart-items">
+                                                <c:forEach var="cartItem" items="${sessionScope.listCart}">
+                                                    <li class="cart-item">
+                                                        <img src="${cartItem.productImage}" alt="#" class="thumb" />
+                                                        <span class="item-name">${cartItem.productName}</span>
+                                                        <span class="item-quantity">${cartItem.quantity} x <span class="item-amount">$${cartItem.productPrice}</span></span>
+                                                        <a href="product-detail?productId=${cartItem.productId}" class="product-detail"></a>
+                                                        <!--<button class="remove-item"><span class="fa fa-times"></span></button>-->
+                                                    </li>
+                                                </c:forEach>
+
+                                            </ul>
+                                        </c:if>
+                                        <c:if test="${sessionScope.listCart == null}" >
+                                            <span class="item-name">There are no product here!</span>
+                                        </c:if>
+
+
+                                        <div class="cart-footer">
+                                            <!--<div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>-->
+                                            <a href="cart.html" class="theme-btn">View Cart</a>
+                                            <a href="checkout.html" class="theme-btn">Checkout</a>
+                                        </div>
+                                    </div> <!--end shopping-cart -->
+                                </div>
+
+                                <!-- Search Btn -->
+                                <div class="search-box">
+                                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo">
-                    <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
-                </div>
+                <!-- Sticky Header  -->
+                <div class="sticky-header">
+                    <div class="auto-container clearfix">
+                        <!--Logo-->
+                        <div class="logo">
+                            <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
+                        </div>
 
-                <!--Right Col-->
-                <div class="nav-outer">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-                    
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav><!-- Main Menu End-->
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
+                        <!--Right Col-->
+                        <div class="nav-outer">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
 
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-            <div class="auto-container clearfix">
-                <!--Logo-->
-                <div class="logo">
-                    <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
-                </div>
-
-                <!--Right Col-->
-                <div class="nav-outer">
-                    <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
-                    
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <!--Keep This Empty / Menu will come through Javascript-->
-                    </nav><!-- Main Menu End-->
-                </div>
-            </div>
-        </div><!-- End Sticky Menu -->
-        
-        <!-- Mobile Header -->
-        <div class="mobile-header">
-            <div class="logo"><a href="index.html"><img src="images/logo-small.png" alt="" title=""></a></div>
-
-            <!--Nav Box-->
-            <div class="nav-outer clearfix">
-                <!--Keep This Empty / Menu will come through Javascript-->
-            </div>
-        </div>
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo-small.png" alt="" title=""></a></div> 
-                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-            </nav>
-        </div><!-- End Mobile Menu -->
-
-        <!-- Header Search -->
-        <div class="search-popup">
-            <span class="search-back-drop"></span>
-            
-            <div class="search-inner">
-                <button class="close-search"><span class="fa fa-times"></span></button>
-                <form method="post" action="blog-showcase.html">
-                    <div class="form-group">
-                        <input type="search" name="search-field" value="" placeholder="Search..." required>
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav><!-- Main Menu End-->
+                        </div>
                     </div>
-                </form>
-            </div>
-        </div>
-        <!-- End Header Search -->
-    </header>
+                </div><!-- End Sticky Menu -->
+
+                <!-- Sticky Header  -->
+                <div class="sticky-header">
+                    <div class="auto-container clearfix">
+                        <!--Logo-->
+                        <div class="logo">
+                            <a href="#" title="Sticky Logo"><img src="images/logo-small.png" alt="Sticky Logo"></a>
+                        </div>
+
+                        <!--Right Col-->
+                        <div class="nav-outer">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+
+                            <!-- Main Menu -->
+                            <nav class="main-menu">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav><!-- Main Menu End-->
+                        </div>
+                    </div>
+                </div><!-- End Sticky Menu -->
+
+                <!-- Mobile Header -->
+                <div class="mobile-header">
+                    <div class="logo"><a href="../home"><img src="images/logo-small.png" alt="" title=""></a></div>
+
+                    <!--Nav Box-->
+                    <div class="nav-outer clearfix">
+                        <!--Keep This Empty / Menu will come through Javascript-->
+                    </div>
+                </div>
+
+                <!-- Mobile Menu  -->
+                <div class="mobile-menu">
+                    <nav class="menu-box">
+                        <div class="nav-logo"><a href="../home"><img src="images/logo-small.png" alt="" title=""></a></div> 
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </nav>
+                </div><!-- End Mobile Menu -->
+
+                <!-- Header Search -->
+                <div class="search-popup">
+                    <span class="search-back-drop"></span>
+
+                    <div class="search-inner">
+                        <button class="close-search"><span class="fa fa-times"></span></button>
+                        <form method="get" action="../search">
+                            <div class="form-group">
+                                <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Header Search -->
+
+            </header>
     <!--End Main Header -->
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(https://via.placeholder.com/1920x400)">
+    <section class="page-title" style="background-image:url(http://html.cwsthemes.com/bellaria/images/background/34.jpg">
         <div class="auto-container">
             <h1>Contacts</h1>
             <ul class="page-breadcrumb">
-                <li><a href="index.html">home</a></li>
-                <li>Contacts</li>
+                <li><a href="../home">home</a></li>
+                <li><a href="contact.jsp">Contacts</a></li>
             </ul>
         </div>
     </section>
@@ -278,7 +244,7 @@
             <div class="sec-title text-center">
                 <div class="divider"><img src="images/icons/divider_1.png" alt=""></div>
                 <h2>Our Contacts</h2>
-                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nisi et dolor ornare pellentesque. Nullam porttitor,<br> odio id facilisis, mauris dolor rhoncus elit, ultricies nulla eros at dui. In suscipit leo sagittis aliquam.</div>
+                <div class="text">Are creative and memorable, allowing visitors to associate contacting your brand with a positive or funny memory.,<br> Show off what your brand does so visitors and potential customers can get a sense of the work you do before they even get in touch</div>
             </div>
 
             <div class="row clearfix">
@@ -305,9 +271,9 @@
                         </div>
 
                         <ul class="contact-info">
-                            <li>785 Carriage Drive, Jacksonville Beach, FL</li>
-                            <li><a href="tel:12032842818">+1 203-284-2818</a><br><a href="tel:12032842919">+1 203-284-2919</a></li>
-                            <li><a href="mailto:info@your-site.com">info@your-site.com</a><br> <a href="mailto:sales@your-site.com">sales@your-site.com</a></li>
+                            <li>Đại Học FPT Hòa Lạc</li>
+                            <li><a href="tel:12032842818">+84 528-104-9282</a><br><a href="tel:12032842919">+84 203-284-2919</a></li>
+                            <li><a href="mailto:info@your-site.com">bsite@gmail.com</a><br> <a href="mailto:sales@your-site.com">sales@your-site.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -352,13 +318,13 @@
 
     <!-- Map Section -->
     <section class="map-section">
-        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <iframe id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14899.038322822236!2d105.53572534999999!3d21.002272299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345b465a4e65fb%3A0xaae6040cfabe8fe!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBGUFQ!5e0!3m2!1svi!2s!4v1657767258723!5m2!1svi!2s"></iframe>
     </section>
     <!-- End Map Section -->
     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="shape_wrapper shape_one">
-            <div class="shape_inner" style="background-image: url(images/background/35.jpg);"><div class="overlay"></div></div>
+            <div class="shape_inner" style="background-image: url(http://html.cwsthemes.com/bellaria/images/background/35.jpg");"><div class="overlay"></div></div>
         </div>
 
         <!--Widgets Section-->
