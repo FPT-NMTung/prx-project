@@ -24,6 +24,10 @@
         <servlet-name>AdminProductCreateController</servlet-name>
         <servlet-class>controller.AdminProductCreateController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RecipeDetailController</servlet-name>
+        <servlet-class>controller.RecipeDetailController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProductDetailController</servlet-name>
         <url-pattern>/product-detail</url-pattern>
@@ -55,6 +59,10 @@
     <servlet-mapping>
         <servlet-name>AddToCartController</servlet-name>
         <url-pattern>/add-to-cart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RecipeDetailController</servlet-name>
+        <url-pattern>/recipe-detail</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AdminProductListController</servlet-name>
