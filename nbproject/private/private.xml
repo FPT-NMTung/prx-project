@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/FPT%208/XML/prx-project/nbproject/ant-deploy.xml</file>
-            <file>file:/D:/FPT%208/XML/prx-project/web/client/recipes-list.html</file>
-            <file>file:/D:/FPT%208/XML/prx-project/web/client/repcipes-list.jsp</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/model/Ingredient.java</file>
+            <file>file:/D:/FPT%208/XML/prx-project/web/WEB-INF/web.xml</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/model/Direction.java</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/model/Recipes.java</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/model/Recipe.java</file>
             <file>file:/D:/FPT%208/XML/prx-project/web/client/recipe.xml</file>
+            <file>file:/D:/FPT%208/XML/prx-project/web/client/home.jsp</file>
+            <file>file:/D:/FPT%208/XML/prx-project/web/client/product-detail.jsp</file>
+            <file>file:/D:/FPT%208/XML/prx-project/web/client/repcipes-list.jsp</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/model/Ingredients.java</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/controller/RecipeDetailController.java</file>
+            <file>file:/D:/FPT%208/XML/prx-project/web/client/recipes_detail.jsp</file>
+            <file>file:/D:/FPT%208/XML/prx-project/src/java/controller/HomeServlet.java</file>
         </group>
     </open-files>
 </project-private>

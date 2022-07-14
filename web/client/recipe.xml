@@ -43,18 +43,18 @@
         <cookTime>2 hr 30 mins</cookTime>
         <totalTime>3 hr 50 mins</totalTime>
         <ingredients>
-            <ingredient id="1">1 cup all-purpose flour</ingredient>
-            <ingredient id="2">½ cup sugar</ingredient>
-            <ingredient id="3">1 tsp baking soda</ingredient>
-            <ingredient id="4">1 tsp fine salt</ingredient>
-            <ingredient id="5">1 tsp cocoa powder</ingredient>
-            <ingredient id="6">½ cup vegetable oil</ingredient>
-            <ingredient id="7">1 cup buttermilk, at room temperature</ingredient>
-            <ingredient id="8">2 large eggs, at room temperature</ingredient>
-            <ingredient id="9">1 tsp red food coloring (1 ounce)</ingredient>
-            <ingredient id="10">1 tsp vanilla extract</ingredient>
-            <ingredient id="11">Cream Cheese Frosting, recipe follows</ingredient>
-            <ingredient id="12">Crushed pecans, for garnish</ingredient>
+            <ingredient>1 cup all-purpose flour</ingredient>
+            <ingredient>½ cup sugar</ingredient>
+            <ingredient>1 tsp baking soda</ingredient>
+            <ingredient>1 tsp fine salt</ingredient>
+            <ingredient>1 tsp cocoa powder</ingredient>
+            <ingredient>½ cup vegetable oil</ingredient>
+            <ingredient>1 cup buttermilk, at room temperature</ingredient>
+            <ingredient>2 large eggs, at room temperature</ingredient>
+            <ingredient>1 tsp red food coloring (1 ounce)</ingredient>
+            <ingredient>1 tsp vanilla extract</ingredient>
+            <ingredient>Cream Cheese Frosting, recipe follows</ingredient>
+            <ingredient>Crushed pecans, for garnish</ingredient>
         </ingredients>
         <directions>
             <direction step="1">Preheat the oven to 350 degrees F. Lightly oil and flour three 9 by 1 1/2-inch round cake pans.</direction>

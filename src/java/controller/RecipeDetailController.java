@@ -56,7 +56,6 @@ public class RecipeDetailController extends HttpServlet {
                 }
             }
             request.setAttribute("recipe", tempRecipe);
-            request.setAttribute("ingredients", tempRecipe.getIngredients());
             request.getRequestDispatcher("client/recipes_detail.jsp").forward(request, response);
          //   response.sendRedirect("client/recipes_detail.jsp");
         } catch (JAXBException e) {

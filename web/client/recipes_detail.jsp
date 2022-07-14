@@ -250,7 +250,7 @@
                     <div class="recipe-single">
                         <div class="recipe-block-two">
                             <div class="image-box">
-                                <figure class="image"><img src="https://via.placeholder.com/1000x1000" alt=""></figure>
+                                <figure class="image"><img src="${recipe.image}" alt=""></figure>
                                 <div class="date">21 <span>Dec</span></div>
                             </div>
                             <div class="lower-content">
@@ -319,96 +319,29 @@
                                 <!--  Cooked Recipe Ingredients -->
 
                                 <div class="cooked-recipe-ingredients">
-                                    <c:forEach var="i" items="${ingredients}">
+                                    <c:forEach var="i" items="${recipe.ingredients.ingredients}">
                                         <div class="cooked-single-ingredient">
                                             <span class="cooked-ingredient-checkbox">&nbsp;</span>
                                             <span class="cooked-ing-measurement">${i.content}</span> 
-                                            <span class="cooked-ing-name">all-purpose flour</span>
                                         </div>
                                     </c:forEach>
 
-                                    <div class="cooked-single-ingredient">
-                                        <span class="cooked-ingredient-checkbox">&nbsp;</span>
-                                        <span class="cooked-ing-name">Crushed pecans, for garnish ${ingredients.size()}</span>
-                                    </div>
-                                </div>
-
                                 <!-- Cooked Recipe Directions -->
+                                
                                 <div class="cooked-recipe-directions">
+                                    <c:forEach var="pp" items="${recipe.directions.directions}">
                                     <div class="cooked-single-direction">
-                                        <span class="cooked-direction-number">1</span>
-                                        <p>Preheat the oven to 350 degrees F. Lightly oil and flour three 9 by 1 1/2-inch round cake pans.</p>
+                                        <span class="cooked-direction-number">${pp.step}</span>
+                                        <p>${pp.content}</p>
                                     </div>
-
-                                    <div class="cooked-single-direction">
-                                        <span class="cooked-direction-number">2</span>
-                                        <p>In a large bowl, sift together the flour, sugar, baking soda, salt, and cocoa powder. In another large bowl, whisk together the oil, buttermilk, eggs, food coloring, vinegar, and vanilla.</p>
-                                    </div>
-
-                                    <div class="cooked-single-direction">
-                                        <span class="cooked-direction-number">3</span>
-                                        <p>Using a standing mixer, mix the dry ingredients into the wet ingredients until just combined and a smooth batter is formed.</p>
-                                    </div>
-
-                                    <div class="cooked-single-direction">
-                                        <span class="cooked-direction-number">4</span>
-                                        <p>Divide the cake batter evenly among the prepared cake pans. Place the pans in the oven evenly spaced apart. Bake, rotating the pans halfway through the cooking, until the cake pulls away from the side of the pans, and a toothpick inserted in the center of the cakes comes out clean, about 30 minutes.</p>
-                                    </div>
-
-                                    <div class="cooked-single-direction">
-                                        <span class="cooked-direction-number">5</span>
-                                        <p>Remove the cakes from the oven and run a knife around the edges to loosen them from the sides of the pans. One at a time, invert the cakes onto a plate and then re-invert them onto a cooling rack, rounded-sides up. Let cool completely.</p>
-                                    </div>
-
-                                    <div class="cooked-single-direction">
-                                        <span class="cooked-direction-number">6</span>
-                                        <p>Frost the cake. Place 1 layer, rounded-side down, in the middle of a rotating cake stand. Using a palette knife or offset spatula spread some of the Cream Cheese Frosting over the top of the cake. (Spread enough frosting to make a 1/4 to 1/2-inch layer.) Carefully set another layer on top, rounded-side down, and repeat. Top with the remaining layer and cover the entire cake with the remaining frosting. Sprinkle the top with the pecans.</p>
-                                    </div>
+                                    </c:forEach>
                                 </div>
                             </div>
 
                             <div class="devider"><img src="client/images/icons/icon-devider-gray.png" alt=""></div>
                         </div>
 
-                        <!--Comment Form-->
-                        <div class="comment-form">
-                            <div class="group-title">
-                                <h3>Leave a Reply</h3>
-                            </div>
-                            <div class="form-outer">
-                                <p>Your email address will not be published. Required fields are marked *</p>
-                                <form method="post" action="blog-showcase.html"> 
-                                    <div class="row clearfix">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
-                                            <div class="field-label">Comment</div>
-                                            <textarea name="message" placeholder=""></textarea>
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-12 col-sm-12 form-group">
-                                            <div class="field-label">Name *</div>
-                                            <input type="text" name="username" placeholder="" required="">
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-12 col-sm-12 form-group">
-                                            <div class="field-label">Email *</div>
-                                            <input type="email" name="email" placeholder="" required="">
-                                        </div>
-
-                                        <div class="col-lg-4 col-md-12 col-sm-12 form-group">
-                                            <div class="field-label">Website</div>
-                                            <input type="url" name="website" placeholder="" required="">
-                                        </div>
-
-                                        <div class="col-lg-12 col-md-12 col-sm-12 form-group text-right">
-                                            <input type="submit" name="submit" value="Submit">
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                        
             </section>
             <!-- End Recipes Section Two -->
 

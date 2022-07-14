@@ -26,13 +26,13 @@ public class Recipe {
     private String prepTime;
     private String cookTime;
     private String totalTime;
-    private List<Ingredient> ingredients;
+    private Ingredients ingredients;
     private Directions directions;
 
     public Recipe() {
     }
 
-    public Recipe(int id, String name, String image, String description, String author, String category, String difficulty, String prepTime, String cookTime, String totalTime, List<Ingredient> ingredients, Directions directions) {
+    public Recipe(int id, String name, String image, String description, String author, String category, String difficulty, String prepTime, String cookTime, String totalTime, Ingredients ingredients, Directions directions) {
         this.id = id;
         this.name = name;
         this.image = image;
@@ -138,12 +138,12 @@ public class Recipe {
         this.totalTime = totalTime;
     }
 
-    public List<Ingredient> getIngredients() {
+    public Ingredients getIngredients() {
         return ingredients;
     }
 
     @XmlElement(name = "ingredients")
-    public void setIngredients(List<Ingredient> ingredients) {
+    public void setIngredients(Ingredients ingredients) {
         this.ingredients = ingredients;
     }
 
