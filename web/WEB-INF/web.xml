@@ -9,6 +9,22 @@
         <servlet-class>controller.AddToCartController</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>AdminProductListController</servlet-name>
+        <servlet-class>controller.AdminProductListController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminProductDetailController</servlet-name>
+        <servlet-class>controller.AdminProductDetailController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminProductDeleteController</servlet-name>
+        <servlet-class>controller.AdminProductDeleteController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AdminProductCreateController</servlet-name>
+        <servlet-class>controller.AdminProductCreateController</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>RecipeDetailController</servlet-name>
         <servlet-class>controller.RecipeDetailController</servlet-class>
     </servlet>
@@ -47,6 +63,22 @@
     <servlet-mapping>
         <servlet-name>RecipeDetailController</servlet-name>
         <url-pattern>/recipe-detail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductListController</servlet-name>
+        <url-pattern>/admin/products</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductDetailController</servlet-name>
+        <url-pattern>/admin/product</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductDeleteController</servlet-name>
+        <url-pattern>/admin/product/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AdminProductCreateController</servlet-name>
+        <url-pattern>/admin/create</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
