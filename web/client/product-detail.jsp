@@ -72,16 +72,13 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
                                     <ul class="navigation menu-left clearfix">
-                                        <li class="current dropdown"><a href="home">Home</a>
+                                        <li class="dropdown"><a href="home">Home</a>
 
                                         </li>
-                                        <li class="dropdown"><a href="about-us.html">Pages</a>
+                                        <li class="dropdown"><a href="client/our-staff.jsp">Pages</a>
                                             <ul>
-                                                <li><a href="about-us.html">About Us</a></li>
-                                                <li><a href="our-staff.html">Our Staff</a></li>
-                                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                                <li><a href="content-elements.html">Content Elements</a></li>
-                                                <li><a href="recipes-list.html">Recipes Grid</a></li>
+                                                <li><a href="client/our-staff.jsp">Our Staff</a></li>
+                                                <li><a href="client/recipes-list.jsp">Recipes Grid</a></li>
                                             </ul>
                                         </li>
 
@@ -89,21 +86,20 @@
 
                                     <ul class="navigation menu-right clearfix">
 
-                                        <li class="dropdown"><a href="shop.html">Shop</a>
+                                        <li class="current dropdown"><a href="home">Shop</a>
                                             <ul>
-                                                <li><a href="shop.html">Shop</a></li>
                                                 <li><a href="shopping-cart.html">Cart</a></li>
                                                 <li><a href="checkout.html">Checkout</a></li>
-                                                <li><a href="login.html">My account</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contacts</a></li>
+                                        <li><a href="client/contact.jsp">Contacts</a></li>
                                     </ul>
                                 </div>
                             </nav>
                             <!-- Main Menu End-->
 
                             <div class="outer-box clearfix">
+                                <!-- Shoppping Car -->
                                 <div class="cart-btn">
                                     <c:if test="${sessionScope.listCart != null}" >
                                         <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">${sessionScope.listCart.size()}</span></a>
@@ -111,7 +107,7 @@
 
                                     <c:if test="${sessionScope.listCart == null}" >
                                         <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">0</span></a>
-                                    </c:if>
+                                        </c:if>
 
                                     <div class="shopping-cart">
                                         <c:if test="${sessionScope.listCart.size() != null}" >
@@ -224,6 +220,9 @@
                         </form>
                     </div>
                 </div>
+                <!-- End Header Search -->
+
+            </header>
                 <!-- End Header Search -->
 
             </header>
