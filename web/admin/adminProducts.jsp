@@ -118,6 +118,10 @@
                 <!-- BEGIN CUSTOM -->
 
                 <div class="card">
+
+                    <div style="display: flex; align-items: center; margin: 20px 0 20px 0; column-gap: 30px">
+                        <a style="margin: 0 20px" class="btn btn-primary" href="create">Create</a>
+                    </div>
                     <div class="table-responsive">
                         <table class="table align-items-center mb-0">
                             <thead>
