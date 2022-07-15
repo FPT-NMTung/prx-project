@@ -314,6 +314,7 @@
                                 <!--  Cooked Recipe Ingredients -->
 
                                 <div class="cooked-recipe-ingredients">
+                                    <strong class="cooked-meta-title">Ingredients:</strong>
                                     <c:forEach var="i" items="${recipe.ingredients.ingredients}">
                                         <div class="cooked-single-ingredient">
                                             <span class="cooked-ingredient-checkbox">&nbsp;</span>
@@ -324,6 +325,7 @@
                                 <!-- Cooked Recipe Directions -->
 
                                 <div class="cooked-recipe-directions">
+                                    <strong class="cooked-meta-title">Directions/Steps:</strong>
                                     <c:forEach var="pp" items="${recipe.directions.directions}">
                                         <div class="cooked-single-direction">
                                             <span class="cooked-direction-number">${pp.step}</span>
