@@ -6,6 +6,15 @@
             <file>file:/D:/PRX/prx-project/src/java/controller/CartController.java</file>
             <file>file:/D:/PRX/prx-project/web/client/home.jsp</file>
             <file>file:/D:/PRX/prx-project/web/client/cart.jsp</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/AdminProductListController.java</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/AdminProductCreateController.java</file>
+            <file>file:/D:/PRX/prx-project/web/client/recipes_detail.jsp</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/AdminProductDeleteController.java</file>
+            <file>file:/D:/PRX/prx-project/web/client/recipes-list.jsp</file>
+            <file>file:/D:/PRX/prx-project/web/client/product-detail.jsp</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/AdminProductDetailController.java</file>
+            <file>file:/D:/PRX/prx-project/web/client/shopping-cart.html</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/HomeServlet.java</file>
         </group>
     </open-files>
 </project-private>
