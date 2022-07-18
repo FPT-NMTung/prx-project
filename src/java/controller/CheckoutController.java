@@ -40,6 +40,7 @@ public class CheckoutController extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        request.setCharacterEncoding("UTF-8");
         List<Cart> listCart = request.getSession().getAttribute("listCart") !=null ? (List<Cart>) request.getSession().getAttribute("listCart") : new ArrayList<>();
         
         if(listCart.size()>0){
@@ -79,6 +80,7 @@ public class CheckoutController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         List<Cart> listCart = (List<Cart>) request.getSession().getAttribute("listCart");
         
         String firstName = request.getParameter("fname");

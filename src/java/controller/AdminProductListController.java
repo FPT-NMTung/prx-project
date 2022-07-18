@@ -50,6 +50,7 @@ public class AdminProductListController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
+            request.setCharacterEncoding("UTF-8");
             List<Product> listProduct = new ArrayList<>();
             JAXBContext context = JAXBContext.newInstance(Products.class);
             Unmarshaller marshaller = context.createUnmarshaller();

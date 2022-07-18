@@ -68,6 +68,7 @@ public class AdminProductCreateController extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         try {
+            request.setCharacterEncoding("UTF-8");
             String name = request.getParameter("name");
             String category = request.getParameter("category");
             String longS = request.getParameter("long");
