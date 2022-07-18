@@ -90,7 +90,7 @@
                                         <li class="dropdown"><a href="../home">Shop</a>
                                             <ul>
                                                 <li><a href="../Cart">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="../Checkout">Checkout</a></li>
                                             </ul>
                                         </li>
                                         <li class="current dropdown"><a href="contact.jsp">Contacts</a></li>
@@ -133,7 +133,7 @@
                                         <div class="cart-footer">
                                             <!--<div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>-->
                                             <a href="../Cart" class="theme-btn">View Cart</a>
-                                            <a href="checkout.html" class="theme-btn">Checkout</a>
+                                            <a href="../Checkout" class="theme-btn">Checkout</a>
                                         </div>
                                     </div> <!--end shopping-cart -->
                                 </div>

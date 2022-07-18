@@ -132,7 +132,7 @@
                                         <div class="cart-footer">
                                             <!--<div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>-->
                                             <a href="Cart" class="theme-btn">View Cart</a>
-                                            <a href="checkout.html" class="theme-btn">Checkout</a>
+                                            <a href="Checkout" class="theme-btn">Checkout</a>
                                         </div>
                                     </div> <!--end shopping-cart -->
                                 </div>
@@ -230,7 +230,7 @@
                 <div class="auto-container">
                     <h1>Checkout</h1>
                     <ul class="page-breadcrumb">
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="home">home</a></li>
                         <li>Checkout</li>
                     </ul>
                 </div>
