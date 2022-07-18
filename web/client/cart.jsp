@@ -1,7 +1,7 @@
 <%-- 
     Document   : cart
     Created on : Jul 14, 2022, 6:23:10 PM
-    Author     : hoang
+    Author     : huydd
 --%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -88,7 +88,7 @@
                                         <li class="dropdown"><a href="home">Shop</a>
                                             <ul>
                                                 <li><a href="Cart">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="Checkout">Checkout</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="client/contact.jsp">Contacts</a></li>
@@ -266,7 +266,7 @@
                                         <input type="hidden" name="product<%=id%>" value="${product.productId}"/>
                                         <td class="product-thumbnail"><a href="shop-single.html"><img src="${product.productImage}" alt=""></a></td>
                                         <td class="product-name"><a href="shop-single.html">${product.productName}</a></td>
-                                        $<td class="product-price">${product.productPrice} $</td> 
+                                        <td class="product-price">${product.productPrice} $</td> 
                                         <td class="product-quantity">
                                             <button class="minus" id="minus+<%=count%>" onclick="process(<%=count%>, false,<%=id1%>)" style="text-decoration: none">-</button> 
                                             <div class="quantity"><label>Quantity</label>
@@ -275,7 +275,7 @@
                                             <button class="add" id="add+<%=count%>" onclick="process(<%=count%>, true,<%=id1%>)" style="text-decoration: none" href="#">+</button>
                                         </td>
                                         <p hidden id="gia<%=count%>">${product.productPrice}</p>
-                                        $<td class="product-subtotal"><p id="subtotal<%=count%>" class="amount">${product.productPrice * product.quantity} $</p></td>
+                                        <td class="product-subtotal"><p id="subtotal<%=count%>" class="amount">${product.productPrice * product.quantity} $</p></td>
                                         
                                         <td class="product-remove"> <a href="Cart?id=${product.productId}&action=remove" class="remove"><span class="fa fa-times"></span></a></td>
                                         </tr>
@@ -303,7 +303,7 @@
                                 <li><h3>Cart Totals</h3></li>
                                 <!--                        <li class="clearfix"><span class="col">Subtotal</span><span class="col price">$186.00</span></li>-->
                                 <li class="clearfix"><span class="col">Total</span><span id="tong" class="col total-price">${requestScope.total} $</span></li>
-                                <li class="text-right"><button type="submit" class="theme-btn proceed-btn">Proceed to Checkout</button></li>
+                                <li class="text-right"><button type="submit" class="theme-btn proceed-btn"><a href="Checkout">Proceed to Checkout</a></button></li>
                             </ul>
                         </div>  
                     </div>
