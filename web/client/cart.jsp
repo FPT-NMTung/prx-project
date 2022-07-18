@@ -131,7 +131,7 @@
                                         <div class="cart-footer">
                                             <!--<div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>-->
                                             <a href="Cart" class="theme-btn">View Cart</a>
-                                            <a href="checkout.html" class="theme-btn">Checkout</a>
+                                            <a href="Checkout" class="theme-btn">Checkout</a>
                                         </div>
                                     </div> <!--end shopping-cart -->
                                 </div>
@@ -262,8 +262,8 @@
                                         <c:forEach items="${requestScope.cart}" var="product">
                                             <tr class="cart-item">
                                         <input type="hidden" name="product<%=id%>" value="${product.productId}"/> 
-                                        <td class="product-thumbnail"><a href="shop-single.html"><img src="${product.productImage}" alt=""></a></td>
-                                        <td class="product-name"><a href="shop-single.html">${product.productName}</a></td>
+                                        <td class="product-thumbnail"><a href="product-detail?productId=${product.productId}"><img src="${product.productImage}" alt=""></a></td>
+                                        <td class="product-name"><a href="product-detail?productId=${product.productId}">${product.productName}</a></td>
                                         <td class="product-price">${product.productPrice}</td> 
                                         <td class="product-quantity">
                                             <button class="minus" id="minus+<%=id%>" onclick="process(<%=id%>, false)" style="text-decoration: none">-</button> 
