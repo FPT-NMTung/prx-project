@@ -22,19 +22,4 @@ and open the template in the editor.
         <street_address>asd</street_address>
         <total>100.0</total>
     </order>
-    <order id="1707">
-        <apt_address>Ã¡dÃ¡</apt_address>
-        <billing_country>VN</billing_country>
-        <city_address>Äáº¥</city_address>
-        <companyName>da</companyName>
-        <email>huyddhe140044@gmail.com</email>
-        <firstName>fsdfs</firstName>
-        <lastName>sda</lastName>
-        <note></note>
-        <phone>1231231231</phone>
-        <postCode>12312</postCode>
-        <state_country>dÃ¡</state_country>
-        <street_address>Äáº¥</street_address>
-        <total>0.0</total>
-    </order>
 </orders>
