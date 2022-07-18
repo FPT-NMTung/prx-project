@@ -230,7 +230,7 @@
                 <div class="auto-container">
                     <h1>Cart</h1>
                     <ul class="page-breadcrumb">
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="home">home</a></li>
                         <li>Cart</li>
                     </ul>
                 </div>
@@ -275,7 +275,7 @@
                                             <button class="add" id="add+<%=count%>" onclick="process(<%=count%>, true,<%=id1%>)" style="text-decoration: none" href="#">+</button>
                                         </td>
                                         <p hidden id="gia<%=count%>">${product.productPrice}</p>
-                                        $<td class="product-subtotal"><p id="subtotal<%=count%>" class="amount">${product.productPrice * product.quantity} $</p></td>
+                                        $<td class="product-subtotal"><p id="subtotal<%=count%>" class="amount">$${product.productPrice * product.quantity}</p></td>
                                         
                                         <td class="product-remove"> <a href="Cart?id=${product.productId}&action=remove" class="remove"><span class="fa fa-times"></span></a></td>
                                         </tr>
@@ -302,7 +302,7 @@
                             <ul class="totals-table">
                                 <li><h3>Cart Totals</h3></li>
                                 <!--                        <li class="clearfix"><span class="col">Subtotal</span><span class="col price">$186.00</span></li>-->
-                                <li class="clearfix"><span class="col">Total</span><span id="tong" class="col total-price">${requestScope.total} $</span></li>
+                                <li class="clearfix"><span class="col">Total</span><span id="tong" class="col total-price">$${requestScope.total}</span></li>
                                 <li class="text-right"><button type="submit" class="theme-btn proceed-btn">Proceed to Checkout</button></li>
                             </ul>
                         </div>  
