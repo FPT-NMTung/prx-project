@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/client/checkout.html</file>
-            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/client/staff-single.html</file>
-            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/web/client/contact.html</file>
-            <file>file:/D:/FPT/8-SUM2022/PRX301/Project/src/java/controller/HomeServlet.java</file>
+            <file>file:/D:/PRX/prx-project/web/client/cart.jsp</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/AdminProductCreateController.java</file>
+            <file>file:/D:/PRX/prx-project/src/java/controller/CheckoutController.java</file>
+            <file>file:/D:/PRX/prx-project/web/client/checkout.jsp</file>
         </group>
     </open-files>
 </project-private>

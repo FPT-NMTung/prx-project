@@ -95,8 +95,8 @@
 
                                         <li class="dropdown"><a href="home">Shop</a>
                                             <ul>
-                                                <li><a href="shopping-cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="Cart">Cart</a></li>
+                                                <li><a href="Checkout">Checkout</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="client/contact.jsp">Contacts</a></li>
@@ -109,11 +109,11 @@
                                 <!-- Shoppping Car -->
                                 <div class="cart-btn">
                                     <c:if test="${sessionScope.listCart != null}" >
-                                        <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">${sessionScope.listCart.size()}</span></a>
+                                        <a href="Cart"><i class="icon flaticon-commerce"></i> <span class="count">${sessionScope.listCart.size()}</span></a>
                                         </c:if>
 
                                     <c:if test="${sessionScope.listCart == null}" >
-                                        <a href="shopping-cart.html"><i class="icon flaticon-commerce"></i> <span class="count">0</span></a>
+                                        <a href="Cart"><i class="icon flaticon-commerce"></i> <span class="count">0</span></a>
                                         </c:if>
 
                                     <div class="shopping-cart">
@@ -138,8 +138,8 @@
 
                                         <div class="cart-footer">
                                             <!--<div class="shopping-cart-total"><strong>Subtotal:</strong> $97.00</div>-->
-                                            <a href="cart.html" class="theme-btn">View Cart</a>
-                                            <a href="checkout.html" class="theme-btn">Checkout</a>
+                                            <a href="Cart" class="theme-btn">View Cart</a>
+                                            <a href="Checkout" class="theme-btn">Checkout</a>
                                         </div>
                                     </div> <!--end shopping-cart -->
                                 </div>
