@@ -1,60 +1,61 @@
 <%-- 
-    Document   : cart
-    Created on : Jul 14, 2022, 6:23:10 PM
-    Author     : huydd
+    Document   : checkout
+    Created on : Jul 15, 2022, 7:55:14 PM
+    Author     : huy
 --%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Bellaria - a Delicious Cakes and Bakery HTML Template | Shopping Cart</title>
+<head>
+<meta charset="utf-8">
+<title>Bellaria - a Delicious Cakes and Bakery HTML Template | Checkout</title>
 
-        <!-- Stylesheets -->
-        <link href="client/css/bootstrap.css" rel="stylesheet">
-        <link href="client/css/style.css" rel="stylesheet">
-        <link href="client/css/responsive.css" rel="stylesheet">
+<!-- Stylesheets -->
+<link href="client/css/bootstrap.css" rel="stylesheet">
+<link href="client/css/style.css" rel="stylesheet">
+<link href="client/css/responsive.css" rel="stylesheet">
 
-        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-        <link rel="icon" href="client/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="client/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="client/images/favicon.png" type="image/x-icon">
 
-        <!-- Responsive -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-        <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-    </head>
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
 
-    <body>
+<body>
 
-        <div class="page-wrapper">
+<div class="page-wrapper">
 
-            <!-- Preloader -->
-            <div class="preloader">
-                <div class="loader_overlay"></div>
-                <div class="loader_cogs">
-                    <div class="loader_cogs__top">
-                        <div class="top_part"></div>
-                        <div class="top_part"></div>
-                        <div class="top_part"></div>
-                        <div class="top_hole"></div>
-                    </div>
-                    <div class="loader_cogs__left">
-                        <div class="left_part"></div>
-                        <div class="left_part"></div>
-                        <div class="left_part"></div>
-                        <div class="left_hole"></div>
-                    </div>
-                    <div class="loader_cogs__bottom">
-                        <div class="bottom_part"></div>
-                        <div class="bottom_part"></div>
-                        <div class="bottom_part"></div>
-                        <div class="bottom_hole"></div>
-                    </div>
-                </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader_overlay"></div>
+        <div class="loader_cogs">
+            <div class="loader_cogs__top">
+                <div class="top_part"></div>
+                <div class="top_part"></div>
+                <div class="top_part"></div>
+                <div class="top_hole"></div>
             </div>
-
+            <div class="loader_cogs__left">
+                <div class="left_part"></div>
+                <div class="left_part"></div>
+                <div class="left_part"></div>
+                <div class="left_hole"></div>
+            </div>
+            <div class="loader_cogs__bottom">
+                <div class="bottom_part"></div>
+                <div class="bottom_part"></div>
+                <div class="bottom_part"></div>
+                <div class="bottom_hole"></div>
+            </div>
+        </div>
+    </div>
+    
             <!-- Main Header-->
             <header class="main-header">
                 <!-- Menu Wave -->
@@ -224,90 +225,15 @@
             </header>
             <!--End Main Header -->
 
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(http://html.cwsthemes.com/bellaria/images/background/34.jpg)">
+        <div class="auto-container">
+            <h1>Thanks For Shopping</h1>
+        </div>
+    </section>
+    <!--End Page Title-->
 
-            <!--Page Title-->
-            <section class="page-title" style="background-image:url(http://html.cwsthemes.com/bellaria/images/background/34.jpg)">
-                <div class="auto-container">
-                    <h1>Cart</h1>
-                    <ul class="page-breadcrumb">
-                        <li><a href="home">home</a></li>
-                        <li>Cart</li>
-                    </ul>
-                </div>
-            </section>
-            <!--End Page Title-->
-
-            <!--Cart Section-->
-            <section class="cart-section">
-                <div class="auto-container">
-                    <form action="Cart" method="POST">
-                        <!--Cart Outer-->
-                        <div class="cart-outer">
-                            <div class="table-outer">
-                                <table class="cart-table">
-                                    <thead class="cart-header">
-                                        <tr>
-                                            <th class="product-thumbnail">&nbsp;</th>
-                                            <th class="product-name">Product</th>
-                                            <th class="product-price">Price</th>
-                                            <th class="product-quantity">Quantity</th>
-                                            <th class="product-subtotal">Total</th>
-                                            <th class="product-remove">&nbsp;</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <%
-                                            int id = 1;
-                                        %>
-                                        <c:forEach items="${requestScope.cart}" var="product">
-                                            <tr class="cart-item">
-                                        <input type="hidden" name="product<%=id%>" value="${product.productId}"/> 
-                                        <td class="product-thumbnail"><a href="shop-single.html"><img src="${product.productImage}" alt=""></a></td>
-                                        <td class="product-name"><a href="shop-single.html">${product.productName}</a></td>
-                                        <td class="product-price">${product.productPrice}</td> 
-                                        <td class="product-quantity">
-                                            <button class="minus" id="minus+<%=id%>" onclick="process(<%=id%>, false)" style="text-decoration: none">-</button> 
-                                            <div class="quantity"><label>Quantity</label>
-                                                <input type="text" id="amount<%=id%>" class="qty" name="quantity<%=id%>" value="${product.quantity}"> 
-                                            </div>
-                                            <button class="add" id="add+<%=id%>" onclick="process(<%=id%>, true)" style="text-decoration: none" href="#">+</button>
-                                        </td>
-                                        <p hidden id="gia<%=id%>">${product.productPrice}</p>
-                                        <td class="product-subtotal"><p id="subtotal<%=id%>" class="amount">${product.productPrice * product.quantity}</p></td>
-
-                                        <td class="product-remove"> <a href="Cart?id=${product.productId}&action=remove" class="remove"><span class="fa fa-times"></span></a></td>
-                                        </tr>
-                                        <%
-                                            id++;
-                                        %>
-                                    </c:forEach>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <div class="cart-options clearfix">
-                                <div class="pull-right">
-                                    <button type="submit" class="theme-btn cart-btn">Update cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="row justify-content-between">                    
-                        <div class="column col-lg-4 offset-lg-8 col-md-6 col-sm-12">
-                            <!--Totals Table-->
-                            <ul class="totals-table">
-                                <li><h3>Cart Totals</h3></li>
-                                <!--                        <li class="clearfix"><span class="col">Subtotal</span><span class="col price">$186.00</span></li>-->
-                                <li class="clearfix"><span class="col">Total</span><span id="tong" class="col total-price">${requestScope.total}</span></li>
-                                <li class="text-right"><button type="submit" class="theme-btn proceed-btn"><a href="Checkout">Proceed to Checkout</a></button></li>
-                            </ul>
-                        </div>  
-                    </div>
-                </div>
-            </section>
-            <!--End Cart Section-->
-
-            <!-- Main Footer -->
+<!-- Main Footer -->
             <footer class="main-footer style-seven">
                 <div class="shape_wrapper wave_up">
                     <div class="shape_inner" style="background-image: url(http://html.cwsthemes.com/bellaria/images/background/5.jpg);"><div class="overlay"></div></div>
@@ -423,53 +349,34 @@
             </footer>
             <!-- End Footer -->
 
-        </div><!-- End Page Wrapper -->
+</div><!-- End Page Wrapper -->
 
-        <!-- Scroll To Top -->
-        <div class="scroll-to-top scroll-to-target" data-target="html">
-            <svg viewBox="0 0 500 500">
-            <path d="M488.5,274.5L488.5,274.5l1.8-0.5l-2,0.5c-2.4-8.7-4.5-16.9-4.5-24.5c0-8,2.3-16.5,4.7-25.5
-                  c3.5-13,7.1-26.5,3.7-39.5c-3.6-13.2-13.5-23.1-23.1-32.7c-6.5-6.5-12.6-12.6-16.6-19.4c-3.9-6.8-6.1-15.2-8.5-24.1
-                  c-3.5-13.1-7.1-26.7-16.7-36.3c-9.5-9.5-22.9-13.1-35.9-16.6c-9-2.4-17.5-4.6-24.4-8.7c-6.5-3.8-12.5-9.8-18.9-16.2
-                  c-9.7-9.8-19.6-19.8-33.2-23.4c-13.5-3.7-27.3,0.1-40.4,3.7c-8.7,2.4-16.9,4.6-24.5,4.6c-8,0-16.5-2.3-25.5-4.7
-                  c-9.3-2.5-18.8-5-28.1-5c-3.8,0-7.6,0.4-11.3,1.4C172,11.1,162,21.1,152.4,30.7c-6.5,6.5-12.6,12.6-19.4,16.6
-                  c-6.8,3.9-15.2,6.1-24.1,8.5c-13.1,3.5-26.7,7.1-36.3,16.7c-9.5,9.5-13.1,23-16.6,36c-2.4,9-4.6,17.5-8.7,24.4
-                  c-3.8,6.5-9.8,12.5-16.2,18.9c-9.8,9.7-19.7,19.6-23.4,33.2c-3.7,13.5,0.1,27.3,3.7,40.5c2.4,8.7,4.6,16.9,4.6,24.5
-                  c0,8-2.3,16.5-4.6,25.5c-3.5,13-7.1,26.6-3.7,39.5c3.6,13.2,13.5,23.1,23.1,32.7c6   function process(x, sign, id) {
-                  value = parseInt(d.5,6.5,12.6,12.6,16.6,19.4
-                  c3.9,6.8,6.1,15.1,8.5,24c3.5,13.1,7.1,26.8,16.7,36.4c9.5,9.5,23,13.1,35.9,16.6c9,2.4,17.5,4.6,24.4,8.7
-                  c6.5,3.8,12.5,9.8,18.9,16.2c9.7,9.8,19.6,19.8,33.2,23.5c3.8,1,7.6,1.5,11.8,1.5c9.6,0,19.3-2.7,28.5-5.1c8.8-2.4,17-4.6,24.5-4.6 c8,0,16.5,2.3,25.5,4.6c13,3.6,26.6,7.1,39.5,3.7c13.2-3.6,23.1-13.5,32.7-23.1c6.5-6.5,12.6-12.6,19.4-16.6 c6.7-3.9,15.1-6.1,24-8.5c13.1-3.5,26.8-7.1,36.4-16.8c9.5-9.5,13.1-23,16.6-36c2.4-9,4.6-17.5,8.7-24.4c3.8-6.5,9.8-12.5,16.2-18.9 c9.8-9.7,19.9-19.7,23.6-33.3C495.7,301.4,494.4,287.7,488.5,274.5z"></path>
-            </svg>
-            <span class="fa fa-angle-up"></span>
-        </div>  
-        <script>
-            function process(x, sign, id) {
-                value = parseInt(document.getElementById(('amount' + x)).value);
-                if (value >= 0) {
-                    tong = parseFloat(document.getElementById("tong").innerHTML);
-                    document.getElementById('amount' + x).value = (value + (sign ? 1 : -1));
-                    value = value + (sign ? 1 : -1);
-                    if (value >= 0) {
-                        price = parseFloat(document.getElementById("gia" + x).innerHTML); //thua
-                        document.getElementById("tong").innerHTML = tong + (sign ? 1 : -1) * price;
-                        //                document.getElementById("inputtong").value = tong + (sign ? 1 : -1) * price;
-                        subtotal = parseFloat(price * value);
-                        document.getElementById("subtotal" + x).innerHTML = subtotal;
-                    } else {
-                        document.getElementById('amount' + x).value = 0;
-                    }
-                }
-            }
-        </script>
-        <script src="client/js/jquery.js"></script> 
-        <script src="client/js/popper.min.js"></script>
-        <script src="client/js/bootstrap.min.js"></script>
-        <script src="client/js/jquery.fancybox.js"></script>
-        <script src="client/js/owl.js"></script>
-        <script src="client/js/wow.js"></script>
-        <script src="client/js/appear.js"></script>
-        <script src="client/js/select2.min.js"></script>
-        <script src="client/js/sticky_sidebar.min.js"></script>
-        <script src="client/js/script.js"></script>
-    </body>
+<!-- Scroll To Top -->
+<div class="scroll-to-top scroll-to-target" data-target="html">
+    <svg viewBox="0 0 500 500">
+        <path d="M488.5,274.5L488.5,274.5l1.8-0.5l-2,0.5c-2.4-8.7-4.5-16.9-4.5-24.5c0-8,2.3-16.5,4.7-25.5
+        c3.5-13,7.1-26.5,3.7-39.5c-3.6-13.2-13.5-23.1-23.1-32.7c-6.5-6.5-12.6-12.6-16.6-19.4c-3.9-6.8-6.1-15.2-8.5-24.1
+        c-3.5-13.1-7.1-26.7-16.7-36.3c-9.5-9.5-22.9-13.1-35.9-16.6c-9-2.4-17.5-4.6-24.4-8.7c-6.5-3.8-12.5-9.8-18.9-16.2
+        c-9.7-9.8-19.6-19.8-33.2-23.4c-13.5-3.7-27.3,0.1-40.4,3.7c-8.7,2.4-16.9,4.6-24.5,4.6c-8,0-16.5-2.3-25.5-4.7
+        c-9.3-2.5-18.8-5-28.1-5c-3.8,0-7.6,0.4-11.3,1.4C172,11.1,162,21.1,152.4,30.7c-6.5,6.5-12.6,12.6-19.4,16.6
+        c-6.8,3.9-15.2,6.1-24.1,8.5c-13.1,3.5-26.7,7.1-36.3,16.7c-9.5,9.5-13.1,23-16.6,36c-2.4,9-4.6,17.5-8.7,24.4
+        c-3.8,6.5-9.8,12.5-16.2,18.9c-9.8,9.7-19.7,19.6-23.4,33.2c-3.7,13.5,0.1,27.3,3.7,40.5c2.4,8.7,4.6,16.9,4.6,24.5
+        c0,8-2.3,16.5-4.6,25.5c-3.5,13-7.1,26.6-3.7,39.5c3.6,13.2,13.5,23.1,23.1,32.7c6.5,6.5,12.6,12.6,16.6,19.4
+        c3.9,6.8,6.1,15.1,8.5,24c3.5,13.1,7.1,26.8,16.7,36.4c9.5,9.5,23,13.1,35.9,16.6c9,2.4,17.5,4.6,24.4,8.7
+        c6.5,3.8,12.5,9.8,18.9,16.2c9.7,9.8,19.6,19.8,33.2,23.5c3.8,1,7.6,1.5,11.8,1.5c9.6,0,19.3-2.7,28.5-5.1c8.8-2.4,17-4.6,24.5-4.6 c8,0,16.5,2.3,25.5,4.6c13,3.6,26.6,7.1,39.5,3.7c13.2-3.6,23.1-13.5,32.7-23.1c6.5-6.5,12.6-12.6,19.4-16.6 c6.7-3.9,15.1-6.1,24-8.5c13.1-3.5,26.8-7.1,36.4-16.8c9.5-9.5,13.1-23,16.6-36c2.4-9,4.6-17.5,8.7-24.4c3.8-6.5,9.8-12.5,16.2-18.9 c9.8-9.7,19.9-19.7,23.6-33.3C495.7,301.4,494.4,287.7,488.5,274.5z"></path>
+    </svg>
+    <span class="fa fa-angle-up"></span>
+</div>
+
+<script src="client/js/jquery.js"></script> 
+<script src="client/js/popper.min.js"></script>
+<script src="client/js/bootstrap.min.js"></script>
+<script src="client/js/jquery.fancybox.js"></script>
+<script src="client/js/owl.js"></script>
+<script src="client/js/wow.js"></script>
+<script src="client/js/appear.js"></script>
+<script src="client/js/select2.min.js"></script>
+<script src="client/js/sticky_sidebar.min.js"></script>
+<script src="client/js/script.js"></script>
+</body>
 </html>

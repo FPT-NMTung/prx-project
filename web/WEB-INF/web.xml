@@ -36,6 +36,10 @@
         <servlet-name>CheckoutController</servlet-name>
         <servlet-class>controller.CheckoutController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ThankController</servlet-name>
+        <servlet-class>controller.ThankController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ProductDetailController</servlet-name>
         <url-pattern>/product-detail</url-pattern>
@@ -95,6 +99,10 @@
     <servlet-mapping>
         <servlet-name>CheckoutController</servlet-name>
         <url-pattern>/Checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThankController</servlet-name>
+        <url-pattern>/Thank</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

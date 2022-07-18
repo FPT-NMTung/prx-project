@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<orders>
+    <order id="1">
+        <apt_address>asd</apt_address>
+        <billing_country>dds</billing_country>
+        <city_address>asd</city_address>
+        <companyName>asdas</companyName>
+        <email>asd</email>
+        <firstName>asdad</firstName>
+        <lastName>sad</lastName>
+        <note>asd</note>
+        <phone>asd</phone>
+        <postCode>asd</postCode>
+        <state_country>asd</state_country>
+        <street_address>asd</street_address>
+        <total>100.0</total>
+    </order>
+    <order id="1707">
+        <apt_address>Ã¡dÃ¡</apt_address>
+        <billing_country>VN</billing_country>
+        <city_address>Äáº¥</city_address>
+        <companyName>da</companyName>
+        <email>huyddhe140044@gmail.com</email>
+        <firstName>fsdfs</firstName>
+        <lastName>sda</lastName>
+        <note></note>
+        <phone>1231231231</phone>
+        <postCode>12312</postCode>
+        <state_country>dÃ¡</state_country>
+        <street_address>Äáº¥</street_address>
+        <total>0.0</total>
+    </order>
+</orders>

@@ -47,6 +47,7 @@ public class CartController extends HttpServlet {
                 int id = Integer.parseInt(request.getParameter("id"));
                 for (Cart cart : list) {
                     if(cart.getProductId()==id){
+                        totalPrice= totalPrice - (cart.getProductPrice()*cart.getQuantity());
                         list.remove(cart);
                         break;
                     }
@@ -85,14 +86,18 @@ public class CartController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if(request.getParameter("count")!=null){
             List<Cart> cart = (List<Cart>) request.getSession().getAttribute("listCart");
-            int count = Integer.parseInt(request.getParameter("count"));
             HashMap<Integer,Integer> list = new HashMap<>();
-            for(int i=1;i<=count;i++){
-                String temp = request.getParameter("product"+i);
+            
+            //lay ve cac bien theo ten
+            for(int i=1;i<=cart.size();i++){
+                //khai báo id=1;
+                //do bên jsp khai báo name = product+id --> sau mỗi lần id++
+                int idTemp = Integer.parseInt(request.getParameter("product"+i)); //product id
+                //quantity cũng khai báo tên là quantity+id
                 int quanTemp = Integer.parseInt(request.getParameter("quantity"+i));
-                list.put(Integer.parseInt(temp), quanTemp);
+                //add vào hashmap
+                list.put(idTemp, quanTemp);
             }
             for (Map.Entry<Integer, Integer> entry : list.entrySet()) {
                 Integer id = entry.getKey();
@@ -109,7 +114,6 @@ public class CartController extends HttpServlet {
                 }
             }
             request.getSession().setAttribute("listCart", cart);
-        }
         response.sendRedirect("Cart");
     }
 
