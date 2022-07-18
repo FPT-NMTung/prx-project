@@ -230,7 +230,7 @@
                 <div class="auto-container">
                     <h1>Cart</h1>
                     <ul class="page-breadcrumb">
-                        <li><a href="index.html">home</a></li>
+                        <li><a href="home">home</a></li>
                         <li>Cart</li>
                     </ul>
                 </div>
@@ -266,7 +266,7 @@
                                         <input type="hidden" name="product<%=id%>" value="${product.productId}"/>
                                         <td class="product-thumbnail"><a href="shop-single.html"><img src="${product.productImage}" alt=""></a></td>
                                         <td class="product-name"><a href="shop-single.html">${product.productName}</a></td>
-                                        <td class="product-price">${product.productPrice} $</td> 
+                                        <td class="product-price">$${product.productPrice}</td> 
                                         <td class="product-quantity">
                                             <button class="minus" id="minus+<%=count%>" onclick="process(<%=count%>, false,<%=id1%>)" style="text-decoration: none">-</button> 
                                             <div class="quantity"><label>Quantity</label>
@@ -275,8 +275,8 @@
                                             <button class="add" id="add+<%=count%>" onclick="process(<%=count%>, true,<%=id1%>)" style="text-decoration: none" href="#">+</button>
                                         </td>
                                         <p hidden id="gia<%=count%>">${product.productPrice}</p>
-                                        <td class="product-subtotal"><p id="subtotal<%=count%>" class="amount">${product.productPrice * product.quantity} $</p></td>
-                                        
+                                        <td class="product-subtotal"><p id="subtotal<%=count%>" class="amount">$${product.productPrice * product.quantity}</p></td>
+
                                         <td class="product-remove"> <a href="Cart?id=${product.productId}&action=remove" class="remove"><span class="fa fa-times"></span></a></td>
                                         </tr>
                                         <%
@@ -302,8 +302,8 @@
                             <ul class="totals-table">
                                 <li><h3>Cart Totals</h3></li>
                                 <!--                        <li class="clearfix"><span class="col">Subtotal</span><span class="col price">$186.00</span></li>-->
-                                <li class="clearfix"><span class="col">Total</span><span id="tong" class="col total-price">${requestScope.total} $</span></li>
-                                <li class="text-right"><button type="submit" class="theme-btn proceed-btn"><a href="Checkout">Proceed to Checkout</a></button></li>
+                                <li class="clearfix"><span class="col">Total</span><span id="tong" class="col total-price">$${requestScope.total}</span></li>
+                                <li class="text-right"><button type="submit" class="theme-btn proceed-btn">Proceed to Checkout</button></li>
                             </ul>
                         </div>  
                     </div>
@@ -449,20 +449,20 @@
         <script>
             function process(x, sign, id) {
                 value = parseInt(document.getElementById(('amount' + x + id)).value);
-               if(value>=0){
-                tong = parseFloat(document.getElementById("tong").innerHTML);
-                document.getElementById('amount'+x + id).value = (value + (sign ? 1 : -1));
-                value = value + (sign ? 1 : -1);
-                if(value>=0){
-                    price = parseFloat(document.getElementById("gia" + x).innerHTML);
-                    document.getElementById("tong").innerHTML = tong + (sign ? 1 : -1) * price;
-    //                document.getElementById("inputtong").value = tong + (sign ? 1 : -1) * price;
-                    subtotal = parseFloat(price * value);
-                    document.getElementById("subtotal"+x).innerHTML = subtotal;
-                }else{
-                    document.getElementById('amount'+x + id).value = 0;
+                if (value >= 0) {
+                    tong = parseFloat(document.getElementById("tong").innerHTML);
+                    document.getElementById('amount' + x + id).value = (value + (sign ? 1 : -1));
+                    value = value + (sign ? 1 : -1);
+                    if (value >= 0) {
+                        price = parseFloat(document.getElementById("gia" + x).innerHTML);
+                        document.getElementById("tong").innerHTML = tong + (sign ? 1 : -1) * price;
+                        //                document.getElementById("inputtong").value = tong + (sign ? 1 : -1) * price;
+                        subtotal = parseFloat(price * value);
+                        document.getElementById("subtotal" + x).innerHTML = subtotal;
+                    } else {
+                        document.getElementById('amount' + x + id).value = 0;
+                    }
                 }
-               }
             }
         </script>
         <script src="client/js/jquery.js"></script> 
